@@ -1,0 +1,52 @@
+{
+  "locations": [
+    {
+      "name": "Solok",
+      "image": "https://jadesta.com/imgpost/24097.jpg",
+      "description": "Solok dikenal dengan keindahan alamnya yang menakjubkan, seperti Danau Singkarak dan perkebunan teh yang luas.",
+      "categories": ["Alam", "Kuliner", "Budaya"]
+    },
+    {
+      "name": "Padang",
+      "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/01/1a/3c/ea/caption.jpg?w=1200&h=-1&s=1",
+      "description": "Padang, ibu kota Sumatera Barat, menawarkan pesona pantai yang memukau serta kekayaan kuliner yang tak tertandingi.",
+      "categories": ["Pantai", "Kuliner", "Sejarah"]
+    },
+    {
+      "name": "Bukittinggi",
+      "image": "https://www.djkn.kemenkeu.go.id/files/images/2023/06/62f098752ad92.jpg",
+      "description": "Bukittinggi terkenal dengan Jam Gadang, ikon sejarah yang dikelilingi oleh keindahan alam dan kebudayaan Minangkabau.",
+      "categories": ["Sejarah", "Alam", "Budaya"]
+    }
+  ],
+  "relatedDestinations": [
+    {
+      "name": "Danau Singkarak",
+      "location": "Solok",
+      "image": "https://jadesta.com/imgpost/24097.jpg",
+      "rating": 4.7,
+      "reviews": 340
+    },
+    {
+      "name": "Danau Singkarak",
+      "location": "Padang",
+      "image": "https://jadesta.com/imgpost/24097.jpg",
+      "rating": 4.7,
+      "reviews": 340
+    },
+    {
+      "name": "Danau Singkarak",
+      "location": "Solok",
+      "image": "https://jadesta.com/imgpost/24097.jpg",
+      "rating": 4.7,
+      "reviews": 340
+    },
+    {
+      "name": "Danau Singkarak",
+      "location": "Solok",
+      "image": "https://jadesta.com/imgpost/24097.jpg",
+      "rating": 4.7,
+      "reviews": 340
+    }
+  ]
+}
