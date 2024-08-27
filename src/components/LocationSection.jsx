@@ -1,9 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import DestinationCard from './DestinationCard';
 import data from '../data/data.json';
+import LocationButton from './LocationButton';
+import InfoPanel from './InfoPanel';
 
 const LocationSection = () => {
-  const [activeLocation, setActiveLocation] = useState(data.locations[0]);
+  const [activeLocation, setActiveLocation] = useState(data.locations[3]);
   const [locations, setLocations] = useState([]);
   const [relatedDestinations, setRelatedDestinations] = useState([]);
 
@@ -13,38 +15,26 @@ const LocationSection = () => {
   }, []);
 
   return (
-    <section className="py-16 w-full md:w-10/12 flex flex-col justify-center items-center mx-auto">
-      <div className="text-center mb-8 max-w-2xl">
-        <h2 className="text-2xl md:text-3xl lg:text-4xl font-medium font-poppins mb-4">Jelajahi Destinasi Wisata Menarik</h2>
-        <p className="text-base md:text-lg font-light font-poppins">Rencanakan perjalanan wisata anda dengan panduan, kiat perjalanan, informasi destinasi, dan inspirasi dari kami.</p>
+    <section className="py-16 w-full sm:w-10/12 flex flex-col justify-center items-center mx-auto">
+      <div className="text-center mb-4 max-w-2xl">
+        <h2 className="text-xl md:text-3xl lg:text-4xl font-medium font-poppins mb-4 text-green-600">Jelajahi Destinasi Wisata Menarik</h2>
+        <p className="text-sm px-6 md:text-base font-light font-poppins">Rencanakan perjalanan wisata anda dengan panduan, kiat perjalanan, informasi destinasi, dan inspirasi dari kami.</p>
       </div>
 
-      <div className="flex justify-center mb-8">
-        {locations.map((location, index) => (
-          <button
-            key={index}
-            className={`px-6 py-2 mx-2 rounded-full font-poppins font-medium ${activeLocation.name === location.name ? 'bg-green-700 text-white' : 'bg-gray-200 text-gray-700'} transition duration-300 transform hover:scale-105`}
-            onClick={() => setActiveLocation(location)}
-          >
-            {location.name}
-          </button>
-        ))}
+      {/* Tombol Lokasi */}
+      <div className="mb-2 w-full max-w-3xl">
+        <div className="pt-1 flex flex-nowrap space-x-4 overflow-x-scroll scrollbar-hide w-full sm:flex-wrap justify-center">
+          {locations.map((location, index) => (
+            <LocationButton key={index} location={location} activeLocation={activeLocation} setActiveLocation={setActiveLocation} />
+          ))}
+        </div>
       </div>
 
       <div className="relative w-full max-w-screen-lg mx-auto mb-20">
         <img src={activeLocation.image} alt={activeLocation.name} className="w-full shadow-lg h-96 object-cover" />
 
-        <div className="absolute -bottom-16 left-0 right-0 mx-auto bg-slate-500 bg-opacity-80 p-6 text-white w-11/12">
-          <h3 className="text-2xl font-bold font-poppins mb-2">{activeLocation.name}</h3>
-          <p className="mb-4">{activeLocation.description}</p>
-          <div className="flex flex-wrap">
-            {activeLocation.categories.map((category, index) => (
-              <span key={index} className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-poppins mr-2 mb-2">
-                {category}
-              </span>
-            ))}
-          </div>
-        </div>
+        {/* Menggunakan InfoPanel */}
+        <InfoPanel name={activeLocation.name} description={activeLocation.description} categories={activeLocation.categories} />
       </div>
 
       <div className="max-w-6xl mx-auto">

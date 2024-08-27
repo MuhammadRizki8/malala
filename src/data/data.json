@@ -3,20 +3,50 @@
     {
       "name": "Solok",
       "image": "https://jadesta.com/imgpost/24097.jpg",
-      "description": "Solok dikenal dengan keindahan alamnya yang menakjubkan, seperti Danau Singkarak dan perkebunan teh yang luas.",
+      "description": "Solok dikenal dengan keindahan alamnya yang menakjubkan, seperti Danau Singkarak dan perkebunan teh yang luas. Kota ini juga menjadi destinasi favorit bagi pecinta alam dan fotografi.",
       "categories": ["Alam", "Kuliner", "Budaya"]
     },
     {
       "name": "Padang",
       "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/01/1a/3c/ea/caption.jpg?w=1200&h=-1&s=1",
-      "description": "Padang, ibu kota Sumatera Barat, menawarkan pesona pantai yang memukau serta kekayaan kuliner yang tak tertandingi.",
+      "description": "Padang, ibu kota Sumatera Barat, menawarkan pesona pantai yang memukau serta kekayaan kuliner yang tak tertandingi. Tidak lupa, Padang juga memiliki pusat sejarah dan budaya yang kaya.",
       "categories": ["Pantai", "Kuliner", "Sejarah"]
     },
     {
       "name": "Bukittinggi",
       "image": "https://www.djkn.kemenkeu.go.id/files/images/2023/06/62f098752ad92.jpg",
-      "description": "Bukittinggi terkenal dengan Jam Gadang, ikon sejarah yang dikelilingi oleh keindahan alam dan kebudayaan Minangkabau.",
+      "description": "Bukittinggi terkenal dengan Jam Gadang, ikon sejarah yang dikelilingi oleh keindahan alam dan kebudayaan Minangkabau. Wisatawan dapat menikmati suasana kota yang sejuk dan pemandangan alam yang indah.",
       "categories": ["Sejarah", "Alam", "Budaya"]
+    },
+    {
+      "name": "Pariaman",
+      "image": "https://indonesiakaya.com/wp-content/uploads/2020/10/Pantai_Gandoriah_1200.jpg",
+      "description": "Pariaman terkenal dengan Pantai Gandoriah yang mempesona dan tradisi Tabuik yang unik. Keindahan pantainya menjadikannya tujuan favorit bagi wisatawan lokal maupun internasional.",
+      "categories": ["Pantai", "Budaya", "Sejarah"]
+    },
+    {
+      "name": "Payakumbuh",
+      "image": "https://asset.kompas.com/crops/j39cRNXE6Rl3POmY1tGHucCLvTE=/0x0:1000x667/750x500/data/photo/2023/09/25/6510f8f1df1ce.jpg",
+      "description": "Payakumbuh dikelilingi oleh perbukitan hijau dan merupakan pusat kuliner dengan masakan khas Minang yang lezat. Kota ini juga menjadi tempat ideal untuk menikmati suasana pedesaan yang asri.",
+      "categories": ["Alam", "Kuliner", "Budaya"]
+    },
+    {
+      "name": "Sawahlunto",
+      "image": "https://www.gentaandalas.com/wp-content/uploads/2023/06/IMG-20230602-WA0032.jpg",
+      "description": "Sawahlunto adalah kota tambang yang bersejarah, dengan warisan budaya dan museum tambang yang menarik. Kota ini juga memiliki banyak bangunan tua bersejarah yang masih terjaga dengan baik.",
+      "categories": ["Sejarah", "Budaya", "Pendidikan"]
+    },
+    {
+      "name": "Batusangkar",
+      "image": "https://jurnalpost.com/wp-content/uploads/2023/07/Batusangkar.webp",
+      "description": "Batusangkar adalah pusat budaya Minangkabau dengan banyak situs sejarah seperti Istano Basa Pagaruyung. Kota ini menjadi destinasi utama untuk wisata sejarah dan arsitektur tradisional.",
+      "categories": ["Budaya", "Sejarah", "Alam"]
+    },
+    {
+      "name": "Padang Panjang",
+      "image": "https://www.mindatour.com/wp-content/uploads/2021/04/wisata-kota-tua-padang-panjang-e1618812364851.png",
+      "description": "Padang Panjang memiliki pemandangan alam yang menakjubkan, seperti Air Terjun Lembah Anai dan kebun teh. Kota ini sering disebut sebagai 'Mesin Budaya Minangkabau' karena kaya akan seni dan tradisi.",
+      "categories": ["Alam", "Sejarah", "Budaya"]
     }
   ],
   "relatedDestinations": [
