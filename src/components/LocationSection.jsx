@@ -30,20 +30,21 @@ const LocationSection = () => {
         </div>
       </div>
 
-      <div className="relative w-full max-w-screen-lg mx-auto mb-20">
+      <div className="relative w-full max-w-screen-lg mx-auto mb-24">
         <img src={activeLocation.image} alt={activeLocation.name} className="w-full shadow-lg h-96 object-cover" />
 
         {/* Menggunakan InfoPanel */}
         <InfoPanel name={activeLocation.name} description={activeLocation.description} categories={activeLocation.categories} />
       </div>
 
-      <div className="max-w-6xl mx-auto">
+      {/*destinasi terkait  */}
+      <div className="max-w-screen-lg w-full mx-auto px-4">
         <div className="flex justify-between items-center mb-4">
-          <h3 className="text-2xl font-bold font-poppins">Destinasi Terkait</h3>
-          <button className="text-blue-500 font-poppins transition duration-300 transform hover:scale-105">Lihat Semua</button>
+          <h3 className="text-xl sm:text-2xl font-medium font-poppins">Destinasi Terkait</h3>
+          <button className="text-xs sm:text-base text-green-600 font-poppins transition duration-300 transform hover:scale-105">Lihat Semua</button>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols md:grid-cols-2 lg:grid-cols-4 gap-6">
           {relatedDestinations.map((destination, index) => (
             <DestinationCard key={index} {...destination} />
           ))}

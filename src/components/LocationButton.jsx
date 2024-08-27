@@ -6,24 +6,22 @@ const LocationButton = ({ location, activeLocation, setActiveLocation }) => {
 
   const handleClick = () => {
     setActiveLocation(location);
-
-    // Scroll button to center
-    buttonRef.current.scrollIntoView({
-      behavior: 'smooth',
-      block: 'nearest', // Makes sure the button stays visible but centers it
-      inline: 'center', // Centers horizontally
-    });
   };
 
   return (
     <button
       ref={buttonRef}
-      className={`whitespace-nowrap px-6 py-2 rounded-full font-poppins font-medium ${
+      className={`relative whitespace-nowrap px-2 py-1 sm:px-2 sm:py-2 rounded-full font-poppins font-medium overflow-hidden ${
         activeLocation.name === location.name ? 'bg-green-700 text-white' : 'bg-white text-gray-700 border border-green-600'
-      } transition duration-300 transform hover:scale-105 ml-2 sm:mb-4`}
+      } transition duration-300 transform hover:scale-105 ml-1 sm:ml-2 sm:mb-4
+    before:absolute before:inset-0 before:bg-green-700 before:rounded-full before:scale-0 before:transition before:duration-500 before:origin-center before:content-[''] hover:before:scale-100
+    hover:text-white`}
       onClick={handleClick}
     >
-      {location.name}
+      <span className="relative z-10 text-sm sm:text-base">
+        <span className="block sm:hidden">•</span> {/* Tampilkan titik pada layar kecil */}
+        <span className="hidden sm:block">{location.name}</span> {/* Tampilkan nama lokasi pada layar besar */}
+      </span>
     </button>
   );
 };
