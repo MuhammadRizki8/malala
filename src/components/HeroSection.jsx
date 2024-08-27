@@ -5,9 +5,9 @@ import heroImage from '../assets/images/pagaruyung2.jpg';
 const HeroSection = () => {
   return (
     <div className="bg-cover bg-center h-screen w-full" style={{ backgroundImage: `url(${heroImage})` }}>
-      <div className="flex flex-col items-center justify-center h-full bg-black bg-opacity-50 px-4">
-        <h1 className="text-white text-2xl md:text-4xl lg:text-5xl font-normal font-poppins text-center mb-4 md:w-11/12 lg:w-3/4">Jelajahi Budaya dan Alam Minangkabau bersama Malala</h1>
-        <p className="text-white w-11/12 text-sm md:text-xl lg:text-2xl font-light font-poppins text-center mb-8">Mulai petualanganmu di tanah penuh budaya dan keindahan alam yang memukau. Temukan destinasi terbaik di Minangkabau.</p>
+      <div className=" flex flex-col items-center justify-center h-full bg-black bg-opacity-50 px-4">
+        <h1 className="max-w-screen-lg text-white text-2xl md:text-4xl lg:text-5xl font-normal font-poppins text-center mb-4 md:w-11/12 lg:w-3/4">Jelajahi Budaya dan Alam Minangkabau bersama Malala</h1>
+        <p className="max-w-screen-lg text-white text-xs md:text- lg:text-2xl font-light font-poppins text-center mb-8">Mulai petualanganmu di tanah penuh budaya dan keindahan alam yang memukau. Temukan destinasi terbaik di Minangkabau.</p>
 
         <div className="w-full max-w-sm sm:max-w-md md:max-w-xl lg:max-w-3xl flex flex-col sm:flex-row items-center p-2 space-y-2 sm:space-y-0 sm:space-x-2 bg-white rounded-sm shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-500">
           <div className="flex bg-gray-100 p-2 w-full space-x-2 sm:space-x-4 rounded-sm items-center">

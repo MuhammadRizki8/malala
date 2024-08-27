@@ -14,15 +14,15 @@ const InfoPanel = ({ name, description, categories }) => {
 
   return (
     <div className="absolute -bottom-16 left-0 right-0 mx-auto bg-white p-4 sm:p-6 text-slate-700 w-11/12 max-w-3xl shadow-xl rounded-sm">
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6">
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-5 sm:gap-6">
         {/* Kolom Pertama: Nama Lokasi dan Deskripsi */}
-        <div>
+        <div className="col-span-4 border-r border-slate-300 pr-4 sm:pr-6">
           <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-poppins mb-2 text-green-700">{name}</h3>
           <p className="mb-4 text-slate-600 text-xs sm:text-sm lg:text-base">{description}</p>
         </div>
 
         {/* Kolom Kedua: Badge */}
-        <div className="flex flex-wrap justify-start sm:justify-end items-start gap-2">
+        <div className="col-span-1 flex flex-wrap justify-start sm:justify-start gap-y-3 items-start sm:items-end sm:flex-col gap-x-2">
           {categories.map((category, index) => {
             const style = categoryStyles[category] || { color: 'text-gray-500', icon: null };
             return (
