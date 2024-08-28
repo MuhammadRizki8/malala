@@ -1,17 +1,21 @@
-import React from 'react';
-
 const PromotionalBanner = () => {
   return (
-    <section className="flex flex-col lg:flex-row items-center justify-between bg-blue-500 text-white py-12 px-6 lg:px-16 rounded-lg shadow-lg my-8">
+    <section className="max-w-screen-xl mx-auto min-h-48 flex flex-col lg:flex-row space-x-4 items-center justify-between  px-8 text-white ">
       {/* Text and Button Section */}
-      <div className="lg:w-2/3 text-center lg:text-left mb-6 lg:mb-0">
-        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold font-poppins mb-4">Pesan perjalanan wisata yang sempurna dengan pemandu, kiat perjalanan, informasi destinasi, dan inspirasi dari kami.</h2>
-        <button className="bg-white text-blue-500 font-semibold py-2 px-6 rounded-full shadow-lg transition transform hover:bg-gray-200 hover:-translate-y-1">Pesan Sekarang</button>
+      <div className="h-40 md:h-48 lg:h-64 lg:w-2/3 text-center lg:text-left mb-6 lg:mb-0 relative bg-cover bg-center rounded-md" style={{ backgroundImage: `url('https://freerangestock.com/sample/143221/beach-from-above.jpg')` }}>
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+
+        {/* Content */}
+        <div className="relative z-10 p-6">
+          <h2 className="text-xl md:text-1xl lg:text-2xl font-medium font-poppins mb-4">Pesan perjalanan wisata yang sempurna dengan pemandu, kiat perjalanan, informasi destinasi, dan inspirasi dari kami.</h2>
+          <button className="bg-white text-green-600 font-semibold py-2 px-6 rounded-full shadow-lg transition transform hover:bg-gray-200 hover:-translate-y-1">Pesan Sekarang</button>
+        </div>
       </div>
 
       {/* Video Section */}
       <div className="lg:w-1/3">
-        <div className="w-full h-64 md:h-80 lg:h-96 rounded-lg overflow-hidden shadow-lg">
+        <div className="w-full h-40 md:h-48 lg:h-64 rounded-md overflow-hidden shadow-lg">
           <iframe
             className="w-full h-full"
             src="https://www.youtube.com/embed/dn8-9l6WauQ?si=SUSmcf3jRxNgFh9b"
@@ -20,8 +24,6 @@ const PromotionalBanner = () => {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           ></iframe>
-
-          {/* <iframe width="560" height="315" src="https://www.youtube.com/embed/dn8-9l6WauQ?si=SUSmcf3jRxNgFh9b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> */}
         </div>
       </div>
     </section>

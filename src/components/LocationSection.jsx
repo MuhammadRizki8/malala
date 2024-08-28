@@ -38,7 +38,7 @@ const LocationSection = () => {
       </div>
 
       {/*destinasi terkait  */}
-      <div className="max-w-screen-lg w-full mx-auto px-4">
+      <div className="max-w-screen-xl w-full mx-auto px-4">
         <div className="flex justify-between items-center mb-4">
           <h3 className="text-xl sm:text-2xl font-medium font-poppins">Destinasi Terkait</h3>
           <button className="text-xs sm:text-base text-green-600 font-poppins transition duration-300 transform hover:scale-105">Lihat Semua</button>

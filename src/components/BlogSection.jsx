@@ -1,7 +1,6 @@
-// src/components/BlogSection.jsx
-import React from 'react';
 import BlogCard from './BlogCard';
 import padangImage from '../assets/images/padang.jpg';
+
 // Dummy blog data
 const blogs = [
   {
@@ -23,13 +22,12 @@ const blogs = [
 
 const BlogSection = () => {
   return (
-    <section className="py-16">
-      <div className="text-center mb-8">
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-poppins mb-4">Artikel dan Blog</h2>
-        <p className="text-lg md:text-xl font-light font-poppins">Temukan inspirasi wisata dan cerita menarik dari para penulis kami.</p>
+    <section className="my-14 mb-8 max-w-screen-xl w-full mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="flex justify-between items-center mb-6">
+        <h3 className="text-lg sm:text-xl font-medium font-poppins ">Temukan inspirasi wisata dan cerita menarik dari para penulis kami.</h3>
+        <button className="text-xs sm:text-base text-green-600 font-poppins transition duration-300 transform hover:scale-105 hidden sm:block">Lihat Semua</button>
       </div>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {blogs.map((blog, index) => (
           <BlogCard key={index} {...blog} />
         ))}
