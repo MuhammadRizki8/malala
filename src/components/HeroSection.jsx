@@ -1,10 +1,10 @@
 // src/components/HeroSection.jsx
 // import React from 'react';
-import heroImage from '../assets/images/pagaruyung2.jpg';
+import heroImage from '../assets/images/pagaruyung3.jpg';
 
 const HeroSection = () => {
   return (
-    <div className="bg-cover bg-center h-screen w-full" style={{ backgroundImage: `url(${heroImage})` }}>
+    <div className="bg-cover bg-center h-[80vh] sm:h-screen w-full" style={{ backgroundImage: `url(${heroImage})` }}>
       <div className=" flex flex-col items-center justify-center h-full bg-black bg-opacity-50 px-4">
         <h1 className="max-w-screen-lg text-white text-2xl md:text-4xl lg:text-5xl font-normal font-poppins text-center mb-4 md:w-11/12 lg:w-3/4">Jelajahi Budaya dan Alam Minangkabau bersama Malala</h1>
         <p className="max-w-screen-lg text-white text-xs md:text- lg:text-2xl font-light font-poppins text-center mb-8">Mulai petualanganmu di tanah penuh budaya dan keindahan alam yang memukau. Temukan destinasi terbaik di Minangkabau.</p>

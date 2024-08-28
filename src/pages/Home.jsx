@@ -7,6 +7,9 @@ import PopularDestinationBanner from '../components/PopularDestinationBanner';
 import ImageBanner from '../assets/images/imgbanner.png';
 import bgBannerImage from '../assets/images/bg-banner.png';
 import PromotionalBanner from '../components/PromotionalBanner';
+import Footer from '../components/Footer';
+import Navbar from '../components/Navbar';
+
 const Home = () => {
   const bannerData = {
     backgroundImage: bgBannerImage, // Replace with your background image URL
@@ -17,11 +20,13 @@ const Home = () => {
   };
   return (
     <div>
+      <Navbar />
       <HeroSection />
       <LocationSection />
       <PopularDestinationBanner {...bannerData} />
       <BlogSection />
       <PromotionalBanner />
+      <Footer />
     </div>
   );
 };
