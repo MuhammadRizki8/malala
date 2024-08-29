@@ -14,31 +14,46 @@ const Footer = () => {
             </div>
             <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
               <div>
-                <h2 className="mb-6 text-sm font-semibold uppercase text-white">Resources</h2>
+                <h2 className="mb-6 text-sm font-semibold uppercase text-white">Tautan</h2>
                 <ul className="text-white font-medium">
-                  <li className="mb-4">
-                    <a href="#" className="hover:underline">
-                      Flowbite
+                  <li className="mb-2">
+                    <a href="/" className="hover:underline">
+                      Beranda
                     </a>
                   </li>
-                  <li>
-                    <a href="#" className="hover:underline">
-                      Tailwind CSS
+                  <li className="mb-2">
+                    <a href="/destinations" className="hover:underline">
+                      Destinasi
+                    </a>
+                  </li>
+                  <li className="mb-2">
+                    <a href="/about" className="hover:underline">
+                      Tentang Kami
+                    </a>
+                  </li>
+                  <li className="mb-2">
+                    <a href="/contact" className="hover:underline">
+                      Kontak
                     </a>
                   </li>
                 </ul>
               </div>
               <div>
-                <h2 className="mb-6 text-sm font-semibold uppercase text-white">Follow us</h2>
+                <h2 className="mb-6 text-sm font-semibold uppercase text-white">Follow Kami</h2>
                 <ul className="text-white font-medium">
                   <li className="mb-4">
                     <a href="#" className="hover:underline ">
                       Github
                     </a>
                   </li>
-                  <li>
+                  <li className="mb-4">
                     <a href="#" className="hover:underline">
                       Discord
+                    </a>
+                  </li>
+                  <li className="mb-4">
+                    <a href="#" className="hover:underline">
+                      Instagram
                     </a>
                   </li>
                 </ul>

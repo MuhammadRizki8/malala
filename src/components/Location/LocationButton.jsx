@@ -19,8 +19,7 @@ const LocationButton = ({ location, activeLocation, setActiveLocation }) => {
       onClick={handleClick}
     >
       <span className="relative z-10 text-sm sm:text-base">
-        <span className="block sm:hidden">•</span> {/* Tampilkan titik pada layar kecil */}
-        <span className="hidden sm:block">{location.name}</span> {/* Tampilkan nama lokasi pada layar besar */}
+        <span>{location.name}</span>
       </span>
     </button>
   );

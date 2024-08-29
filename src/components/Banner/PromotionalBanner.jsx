@@ -1,9 +1,9 @@
 const PromotionalBanner = () => {
   return (
     <section className="max-w-screen-xl mx-auto">
-      <div className=" mx-auto min-h-48 flex flex-col lg:flex-row space-x-4 items-center justify-between  px-4 sm:px-6 lg:px-8 text-white ">
+      <div className=" mx-auto min-h-48 flex flex-col lg:flex-row space-x-2 items-center justify-between  px-4 sm:px-6 lg:px-8 text-white ">
         {/* Text and Button Section */}
-        <div className="h-48 lg:h-64 lg:w-2/3 text-center lg:text-left mb-6 lg:mb-0 relative bg-cover bg-center rounded-md" style={{ backgroundImage: `url('https://freerangestock.com/sample/143221/beach-from-above.jpg')` }}>
+        <div className="h-40 lg:h-64 lg:w-2/3 text-center lg:text-left mb-6 lg:mb-0 relative bg-cover bg-center rounded-md" style={{ backgroundImage: `url('https://freerangestock.com/sample/143221/beach-from-above.jpg')` }}>
           {/* Overlay */}
           <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
@@ -28,7 +28,7 @@ const PromotionalBanner = () => {
           </div>
         </div>
       </div>
-      <div className="width-full text-center mt-4">
+      <div className="width-full text-center mx-2 mt-2 md:mt-4 lg:mt-6">
         <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold font-poppins text-slate-700">Jelajahi Keindahan Budaya Alam Minang</h3>
         <p className="text-green-600">Temukan destinasi wisata dan pengalaman baru</p>
       </div>

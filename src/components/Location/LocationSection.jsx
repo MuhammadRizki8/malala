@@ -21,9 +21,28 @@ const LocationSection = () => {
         <p className="text-sm px-6 md:text-base font-light font-poppins">Rencanakan perjalanan wisata anda dengan panduan, kiat perjalanan, informasi destinasi, dan inspirasi dari kami.</p>
       </div>
 
-      {/* Tombol Lokasi */}
+      {/* Dropdown or Buttons for Locations */}
       <div className="mb-2 w-full max-w-3xl">
-        <div className="pt-1 flex flex-nowrap space-x-4 overflow-x-scroll scrollbar-hide w-full sm:flex-wrap justify-center">
+        {/* Dropdown for small screens */}
+        <div className="sm:hidden  mx-4">
+          <select
+            className="w-1/3 py-2 border rounded-md text-gray-700 bg-white dark:bg-gray-700 dark:text-white border-gray-300 dark:border-gray-600"
+            value={activeLocation.name}
+            onChange={(e) => {
+              const selectedLocation = locations.find((location) => location.name === e.target.value);
+              setActiveLocation(selectedLocation);
+            }}
+          >
+            {locations.map((location, index) => (
+              <option key={index} value={location.name}>
+                {location.name}
+              </option>
+            ))}
+          </select>
+        </div>
+
+        {/* Buttons for larger screens */}
+        <div className="hidden sm:flex pt-1 flex-wrap space-x-4 justify-center">
           {locations.map((location, index) => (
             <LocationButton key={index} location={location} activeLocation={activeLocation} setActiveLocation={setActiveLocation} />
           ))}
@@ -37,7 +56,7 @@ const LocationSection = () => {
         <InfoPanel name={activeLocation.name} description={activeLocation.description} categories={activeLocation.categories} />
       </div>
 
-      {/*destinasi terkait  */}
+      {/* Destinasi terkait */}
       <div className="max-w-screen-xl w-full mx-auto px-4">
         <div className="flex justify-between items-center mb-4">
           <h3 className="text-xl sm:text-2xl font-medium font-poppins">Destinasi Terkait</h3>
