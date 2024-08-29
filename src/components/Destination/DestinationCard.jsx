@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import { FaStar, FaMapMarkerAlt } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const DestinationCard = ({ image, location, name, rating, reviews }) => {
   // Fungsi untuk menghasilkan array bintang yang diisi dengan warna kuning sesuai rating
@@ -12,7 +13,7 @@ const DestinationCard = ({ image, location, name, rating, reviews }) => {
   };
 
   return (
-    <div className="bg-white rounded-md shadow-lg overflow-hidden">
+    <Link to="destinations/detail" className="bg-white rounded-md shadow-lg overflow-hidden">
       <div className="overflow-hidden">
         <img src={image} alt={name} className="w-full h-40 sm:h-48 object-cover transform transition-transform duration-500 ease-in-out hover:scale-110" />
       </div>
@@ -31,7 +32,7 @@ const DestinationCard = ({ image, location, name, rating, reviews }) => {
           <p className=" text-xs sm:text-sm text-gray-600 font-poppins">({reviews} reviews)</p>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 

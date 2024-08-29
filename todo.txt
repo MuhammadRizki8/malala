@@ -1,0 +1,4 @@
+- rapihin layout design
+- responsive
+- font
+- animasi
