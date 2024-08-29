@@ -1,17 +1,17 @@
 import { useState, useEffect } from 'react';
-import DestinationCard from './DestinationCard';
-import data from '../data/data.json';
+import DestinationCard from '../Destination/DestinationCard';
+import data from '../../data/data.json';
 import LocationButton from './LocationButton';
 import InfoPanel from './InfoPanel';
 
 const LocationSection = () => {
   const [activeLocation, setActiveLocation] = useState(data.locations[3]);
   const [locations, setLocations] = useState([]);
-  const [relatedDestinations, setRelatedDestinations] = useState([]);
+  const [Destinations, setDestinations] = useState([]);
 
   useEffect(() => {
     setLocations(data.locations);
-    setRelatedDestinations(data.relatedDestinations);
+    setDestinations(data.Destinations.slice(0, 4));
   }, []);
 
   return (
@@ -45,7 +45,7 @@ const LocationSection = () => {
         </div>
 
         <div className="grid grid-cols md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {relatedDestinations.map((destination, index) => (
+          {Destinations.map((destination, index) => (
             <DestinationCard key={index} {...destination} />
           ))}
         </div>

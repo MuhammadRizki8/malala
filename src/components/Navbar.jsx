@@ -1,4 +1,6 @@
+// src/components/Navbar.jsx
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import LogoLight from '../assets/images/LogoLight.png';
 
 const Navbar = () => {
@@ -23,10 +25,10 @@ const Navbar = () => {
   return (
     <nav className={`fixed w-full z-20 top-0 left-0 border-b ${isScrolled ? 'bg-green-800' : 'bg-transparent'} transition-colors duration-300 border-gray-200 dark:border-gray-600`}>
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-2">
-        <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
+        <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           <img src={LogoLight} className="h-10" alt="Logo" />
           <span className="hidden sm:block self-center text-2xl font-semibold whitespace-nowrap text-white">Malala</span>
-        </a>
+        </Link>
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
           <button
             type="button"
@@ -50,14 +52,14 @@ const Navbar = () => {
         <div className={`items-center justify-between ${isMenuOpen ? 'block' : 'hidden'} w-full md:flex md:w-auto md:order-1`} id="navbar-sticky">
           <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
             <li>
-              <a href="#" className="block py-2 px-3 text-white md:text-white hover:text-green-500 md:hover:text-green-500">
+              <Link to="/" className="block py-2 px-3 text-white md:text-white hover:text-green-500 md:hover:text-green-500">
                 Beranda
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="block py-2 px-3 text-white md:text-white hover:text-green-500 md:hover:text-green-500">
+              <Link to="/destinations" className="block py-2 px-3 text-white md:text-white hover:text-green-500 md:hover:text-green-500">
                 Destinasi
-              </a>
+              </Link>
             </li>
             <li>
               <a href="#" className="block py-2 px-3 text-white md:text-white hover:text-green-500 md:hover:text-green-500">

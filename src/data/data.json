@@ -49,7 +49,7 @@
       "categories": ["Alam", "Sejarah", "Budaya"]
     }
   ],
-  "relatedDestinations": [
+  "Destinations": [
     {
       "name": "Danau Singkarak",
       "location": "Solok",
@@ -69,6 +69,62 @@
       "location": "Pagaruyung",
       "image": "https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/p2/172/2023/10/17/antarafoto-libur-lebaran-istano-basa-pagaruyung-040522-ief-3-393903641.jpg",
       "rating": 3.0,
+      "reviews": 340
+    },
+    {
+      "name": "Lembah Harau",
+      "location": "50 Kota",
+      "image": "https://pirantitravel.id/wp-content/uploads/2019/06/PAKET-WISATA-SUMATRA-BARAT-5D4N.jpg",
+      "rating": 2.0,
+      "reviews": 340
+    },
+    {
+      "name": "Pantai Air Manis",
+      "location": "Padang",
+      "image": "https://garuda.industry.co.id/uploads/berita/detail/22776.jpg",
+      "rating": 4.5,
+      "reviews": 290
+    },
+    {
+      "name": "Jam Gadang",
+      "location": "Bukittinggi",
+      "image": "https://cdn.idntimes.com/content-images/community/2022/03/fromandroid-b90ab9bb418c17b4c284fa217e21778f.jpg",
+      "rating": 4.8,
+      "reviews": 450
+    },
+    {
+      "name": "Pantai Padang",
+      "location": "Padang",
+      "image": "https://ik.imagekit.io/tvlk/blog/2020/01/shutterstock_435665278.jpg",
+      "rating": 4.0,
+      "reviews": 380
+    },
+    {
+      "name": "Janjang Saribu",
+      "location": "Bukittinggi",
+      "image": "https://asset-2.tstatic.net/travel/foto/bank/images/janjang-bukit-tinggi.jpg",
+      "rating": 4.2,
+      "reviews": 320
+    },
+    {
+      "name": "Nagari 1000 Rumah Gadang",
+      "location": "Padang",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Seribu_Rumah_Gadang.jpg",
+      "rating": 5.0,
+      "reviews": 340
+    },
+    {
+      "name": "Danau Singkarak",
+      "location": "Solok",
+      "image": "https://tribratanews.polri.go.id/web/image/blog.post/62825/image",
+      "rating": 4.7,
+      "reviews": 340
+    },
+    {
+      "name": "Nagari 1000 Rumah Gadang",
+      "location": "Padang",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Seribu_Rumah_Gadang.jpg",
+      "rating": 5.0,
       "reviews": 340
     },
     {

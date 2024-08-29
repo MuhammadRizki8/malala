@@ -1,5 +1,5 @@
 import BlogCard from './BlogCard';
-import padangImage from '../assets/images/padang.jpg';
+import padangImage from '../../assets/images/padang.jpg';
 
 // Dummy blog data
 const blogs = [
