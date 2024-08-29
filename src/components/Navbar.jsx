@@ -67,9 +67,9 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <a href="#" className="block py-2 px-3 text-white md:text-white hover:text-green-500 md:hover:text-green-500">
+              <Link to="/contact" className="block py-2 px-3 text-white md:text-white hover:text-green-500 md:hover:text-green-500">
                 Kontak
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
