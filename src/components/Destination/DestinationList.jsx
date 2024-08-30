@@ -16,7 +16,7 @@ const DestinationList = () => {
 
   return (
     <section className="w-full flex flex-col items-center mx-auto">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-col-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {destinations.slice(0, visibleCount).map((destination, index) => (
           <DestinationCard key={index} {...destination} />
         ))}
