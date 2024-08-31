@@ -13,7 +13,7 @@ const DestinationCard = ({ image, location, name, rating, reviews }) => {
   };
 
   return (
-    <Link to="destinations/detail" className="bg-white rounded-md shadow-lg overflow-hidden">
+    <Link to="detail" className="bg-white rounded-md shadow-lg overflow-hidden">
       <div className="overflow-hidden">
         <img src={image} alt={name} className="w-full h-40 sm:h-48 object-cover transform transition-transform duration-500 ease-in-out hover:scale-110" />
       </div>

@@ -1,4 +1,5 @@
-import { FaStar, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaStar, FaMapMarkerAlt, FaArrowLeft } from 'react-icons/fa';
+
 const DestinationImageGallery = () => {
   const renderStars = () => {
     const stars = [];
@@ -7,25 +8,40 @@ const DestinationImageGallery = () => {
     }
     return stars;
   };
+
   return (
     <>
-      <div className="border-b mt-14 py-6 bg-white max-w-7xl mx-auto">
+      <div className="relative border-b mt-6 py-6 bg-white max-w-7xl mx-auto">
+        {/* Tombol Kembali */}
+        <a href="/destinations" className="mb-2 flex items-center text-green-700 hover:text-green-900">
+          <FaArrowLeft className="mr-1" />
+          <span>Kembali</span>
+        </a>
+
+        {/* Informasi Tujuan */}
         <h1 className="text-2xl font-bold text-green-700 mb-4">Nagari Saribu Rumah Gadang</h1>
         <div className="flex items-center text-gray-600 text-sm mb-4">
-          <FaMapMarkerAlt className="mr-1 text-green-600 w-4  sm:w-3 sm:h-4" />
+          <FaMapMarkerAlt className="mr-1 text-green-600 w-4 sm:w-3 sm:h-4" />
           <p>Solok</p>
           <span className="mx-2">|</span>
           {renderStars()}
           <span className="ml-2">(348 ulasan)</span>
         </div>
-        <div className="flex flex-col md:flex-row gap-4">
-          <div className="w-full md:w-10/12">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Seribu_Rumah_Gadang.jpg" alt="Nagari Saribu Rumah Gadang" className="w-full h-auto rounded-lg shadow-md" />
+
+        {/* Grid untuk gambar utama dan thumbnails */}
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
+          {/* Gambar utama - 3 kolom pada layar besar */}
+          <div className="lg:col-span-3 lg:max-h-[530px]">
+            <img className="h-full object-cover rounded-lg shadow-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/featured/image.jpg" alt="Nagari Saribu Rumah Gadang" />
           </div>
-          <div className="w-full md:w-1/4 flex flex-col gap-2">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Seribu_Rumah_Gadang.jpg" alt="Thumbnail 1" className="w-full h-24 md:h-32 rounded-lg shadow-md object-cover" />
-            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Seribu_Rumah_Gadang.jpg" alt="Thumbnail 2" className="w-full h-24 md:h-32 rounded-lg shadow-md object-cover" />
-            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Seribu_Rumah_Gadang.jpg" alt="Thumbnail 3" className="w-full h-24 md:h-32 rounded-lg shadow-md object-cover" />
+
+          {/* Thumbnails - 1 kolom pada layar besar */}
+          <div className="grid grid-cols-5 lg:grid-cols-1 gap-4 lg:max-h-[530px] lg:overflow-y-auto">
+            <img className="h-auto w-full rounded-lg shadow-md object-cover" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg" alt="Thumbnail 1" />
+            <img className="h-auto w-full rounded-lg shadow-md object-cover" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg" alt="Thumbnail 2" />
+            <img className="h-auto w-full rounded-lg shadow-md object-cover" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" alt="Thumbnail 3" />
+            <img className="h-auto w-full rounded-lg shadow-md object-cover" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg" alt="Thumbnail 4" />
+            <img className="h-auto w-full rounded-lg shadow-md object-cover" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg" alt="Thumbnail 5" />
           </div>
         </div>
       </div>
