@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "rating": 5.0,
+    "title": "Amazing",
+    "author": "Omar Siphron",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "imageUrl": "https://ih1.redbubble.net/image.2998421987.7898/flat,750x,075,f-pad,750x1000,f8f8f8.u1.jpg"
+  },
+  {
+    "id": 2,
+    "rating": 5.0,
+    "title": "Amazing",
+    "author": "Cristofer Ekstrom Bothman",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "imageUrl": "https://ih1.redbubble.net/image.2998421987.7898/flat,750x,075,f-pad,750x1000,f8f8f8.u1.jpg"
+  },
+  {
+    "id": 3,
+    "rating": 5.0,
+    "title": "Amazing",
+    "author": "Kaiya Lubin",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "imageUrl": "https://ih1.redbubble.net/image.2998421987.7898/flat,750x,075,f-pad,750x1000,f8f8f8.u1.jpg"
+  },
+  {
+    "id": 4,
+    "rating": 5.0,
+    "title": "Amazing",
+    "author": "Erin Septimus",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "imageUrl": "https://ih1.redbubble.net/image.2998421987.7898/flat,750x,075,f-pad,750x1000,f8f8f8.u1.jpg"
+  },
+  {
+    "id": 5,
+    "rating": 5.0,
+    "title": "Amazing",
+    "author": "Terry George",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "imageUrl": "https://ih1.redbubble.net/image.2998421987.7898/flat,750x,075,f-pad,750x1000,f8f8f8.u1.jpg"
+  }
+]
