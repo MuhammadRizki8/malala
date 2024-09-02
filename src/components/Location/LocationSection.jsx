@@ -1,18 +1,19 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import DestinationCard from '../Destination/DestinationCard';
 import data from '../../data/data.json';
 import LocationButton from './LocationButton';
 import InfoPanel from './InfoPanel';
 
 const LocationSection = () => {
-  const [activeLocation, setActiveLocation] = useState(data.locations[3]);
-  const [locations, setLocations] = useState([]);
+  const [activeLocation, setActiveLocation] = useState(data.locations[2]);
   const [Destinations, setDestinations] = useState([]);
 
   useEffect(() => {
-    setLocations(data.locations);
     setDestinations(data.Destinations.slice(0, 4));
   }, []);
+
+  // Memoize activeLocation to avoid recalculation on every render
+  const filteredDestinations = useMemo(() => Destinations.filter((dest) => dest.locationId === activeLocation.id), [Destinations, activeLocation]);
 
   return (
     <section className="py-16 w-full sm:w-10/12 flex flex-col justify-center items-center mx-auto">
@@ -24,16 +25,16 @@ const LocationSection = () => {
       {/* Dropdown or Buttons for Locations */}
       <div className="mb-2 w-full max-w-3xl">
         {/* Dropdown for small screens */}
-        <div className="sm:hidden  mx-4">
+        <div className="sm:hidden mx-2">
           <select
-            className="w-1/3 py-2 border rounded-md text-gray-700 bg-white dark:bg-gray-700 dark:text-white border-gray-300 dark:border-gray-600"
+            className="w-2/3  py-2 border rounded-md text-gray-700 bg-white dark:bg-gray-700 dark:text-white border-gray-300 dark:border-gray-600"
             value={activeLocation.name}
             onChange={(e) => {
-              const selectedLocation = locations.find((location) => location.name === e.target.value);
+              const selectedLocation = data.locations.find((location) => location.name === e.target.value);
               setActiveLocation(selectedLocation);
             }}
           >
-            {locations.map((location, index) => (
+            {data.locations.map((location, index) => (
               <option key={index} value={location.name}>
                 {location.name}
               </option>
@@ -43,28 +44,27 @@ const LocationSection = () => {
 
         {/* Buttons for larger screens */}
         <div className="hidden sm:flex pt-1 flex-wrap space-x-4 justify-center">
-          {locations.map((location, index) => (
+          {data.locations.map((location, index) => (
             <LocationButton key={index} location={location} activeLocation={activeLocation} setActiveLocation={setActiveLocation} />
           ))}
         </div>
       </div>
 
+      {/* Image and InfoPanel */}
       <div className="relative w-full max-w-screen-lg mx-auto mb-24">
         <img src={activeLocation.image} alt={activeLocation.name} className="w-full shadow-lg h-96 object-cover" />
-
-        {/* Menggunakan InfoPanel */}
         <InfoPanel name={activeLocation.name} description={activeLocation.description} categories={activeLocation.categories} />
       </div>
 
-      {/* Destinasi terkait */}
+      {/* Related Destinations */}
       <div className="max-w-screen-xl w-full mx-auto px-4">
-        <div className="flex justify-between items-center mb-4">
-          <h3 className="text-xl sm:text-2xl font-medium font-poppins">Destinasi Terkait</h3>
+        <div className="flex flex-col items-start sm:flex-row justify-between sm:items-center mb-4">
+          <h3 className="dark:text-slate-400 text-xl sm:text-2xl font-medium font-poppins">Destinasi Terkait</h3>
           <button className="text-xs sm:text-base text-green-600 font-poppins transition duration-300 transform hover:scale-105">Lihat Semua</button>
         </div>
 
         <div className="grid grid-cols md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {Destinations.map((destination, index) => (
+          {filteredDestinations.map((destination, index) => (
             <DestinationCard key={index} {...destination} />
           ))}
         </div>

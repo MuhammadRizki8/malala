@@ -7,7 +7,7 @@ import LogoDark from '../assets/images/LogoDark.png';
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isDarkMode, setIsDarkMode] = useState(false); // State for dark mode toggle
+  const [isDarkMode, setIsDarkMode] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
@@ -27,10 +27,9 @@ const Navbar = () => {
 
   const toggleDarkMode = (checked) => {
     setIsDarkMode(checked);
-    document.documentElement.classList.toggle('dark', checked); // Add/remove dark class on the html tag
+    document.documentElement.classList.toggle('dark', checked);
   };
 
-  // Determine if the user is on the homepage
   const isHomePage = location.pathname === '/';
 
   return (
@@ -42,7 +41,11 @@ const Navbar = () => {
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-2 py-2">
         <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           <img src={isHomePage ? (isScrolled ? LogoDark : LogoLight) : LogoDark} className="h-10" alt="Logo" />
-          <span className={`hidden sm:block self-center text-2xl font-semibold whitespace-nowrap ${isHomePage ? (isScrolled ? 'text-green-700 hover:text-green-800' : 'text-white dark:text-gray-300') : 'text-green-700 hover:text-800'}`}>
+          <span
+            className={`hidden sm:block self-center text-2xl font-semibold whitespace-nowrap ${
+              isHomePage ? (isScrolled ? 'text-green-700 hover:text-green-800' : 'text-white dark:text-white') : 'text-green-700 dark:text-white hover:text-green-800'
+            }`}
+          >
             Malala
           </span>
         </Link>
@@ -61,49 +64,32 @@ const Navbar = () => {
             </svg>
           </button>
         </div>
-        <div className={` items-center justify-between ${isMenuOpen ? 'block' : 'hidden'} w-full md:flex md:w-auto md:order-1`} id="navbar-sticky">
+        <div className={`items-center justify-between ${isMenuOpen ? 'block' : 'hidden'} w-full md:flex md:w-auto md:order-1`} id="navbar-sticky">
           <ul
-            className={`flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg ${
-              isHomePage ? 'bg-gray-50 dark:bg-gray-800' : 'bg-white dark:bg-gray-900'
-            } md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 ${isHomePage ? 'md:bg-transparent md:dark:bg-transparent' : 'md:bg-white md:dark:bg-gray-900'} dark:border-gray-700`}
+            className={`flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 ${
+              isHomePage ? 'bg-gray-50 dark:bg-gray-800 md:bg-transparent md:dark:bg-transparent' : 'bg-white dark:bg-gray-900 md:bg-transparent md:dark:bg-transparent'
+            } dark:border-gray-700`}
           >
             <li>
-              <Link
-                to="/"
-                className={`block py-2 px-3 ${
-                  isHomePage && isMenuOpen && !isDarkMode ? 'text-green-700 hover:text-green-800' : isHomePage ? (isScrolled ? 'text-green-700 hover:text-green-800' : 'text-white dark:text-gray-300') : 'text-green-700 hover:text-800'
-                }`}
-              >
+              <Link to="/" className={`block py-2 px-3 ${isHomePage ? (isScrolled ? 'text-green-700 hover:text-green-800 dark:text-white' : 'text-white dark:text-white') : 'text-green-700 dark:text-white hover:text-green-800'}`}>
                 Beranda
               </Link>
             </li>
             <li>
               <Link
                 to="/destinations"
-                className={`block py-2 px-3 ${
-                  isHomePage && isMenuOpen && !isDarkMode ? 'text-green-700 hover:text-green-800' : isHomePage ? (isScrolled ? 'text-green-700 hover:text-green-800' : 'text-white dark:text-gray-300') : 'text-green-700 hover:text-800'
-                }`}
+                className={`block py-2 px-3 ${isHomePage ? (isScrolled ? 'text-green-700 hover:text-green-800 dark:text-white' : 'text-white dark:text-white') : 'text-green-700 dark:text-white hover:text-green-800'}`}
               >
                 Destinasi
               </Link>
             </li>
             <li>
-              <Link
-                to="/about"
-                className={`block py-2 px-3 ${
-                  isHomePage && isMenuOpen && !isDarkMode ? 'text-green-700 hover:text-green-800' : isHomePage ? (isScrolled ? 'text-green-700 hover:text-green-800' : 'text-white dark:text-gray-300') : 'text-green-700 hover:text-800'
-                }`}
-              >
+              <Link to="/about" className={`block py-2 px-3 ${isHomePage ? (isScrolled ? 'text-green-700 hover:text-green-800 dark:text-white' : 'text-white dark:text-white') : 'text-green-700 dark:text-white hover:text-green-800'}`}>
                 Tentang Kami
               </Link>
             </li>
             <li>
-              <Link
-                to="/contact"
-                className={`block py-2 px-3 ${
-                  isHomePage && isMenuOpen && !isDarkMode ? 'text-green-700 hover:text-green-800' : isHomePage ? (isScrolled ? 'text-green-700 hover:text-green-800' : 'text-white dark:text-gray-300') : 'text-green-700 hover:text-800'
-                }`}
-              >
+              <Link to="/contact" className={`block py-2 px-3 ${isHomePage ? (isScrolled ? 'text-green-700 hover:text-green-800 dark:text-white' : 'text-white dark:text-white') : 'text-green-700 dark:text-white hover:text-green-800'}`}>
                 Kontak
               </Link>
             </li>

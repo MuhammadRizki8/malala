@@ -6,7 +6,7 @@ import PromotionalBanner from '../components/Banner/PromotionalBanner';
 
 const Home = () => {
   return (
-    <div>
+    <div className="bg-white dark:bg-black  dark:text-white pb-8">
       <HeroSection />
       <LocationSection />
       <PopularDestinationBanner />

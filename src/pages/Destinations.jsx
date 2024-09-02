@@ -5,13 +5,12 @@ import SearchDestinationBar from '../components/Destination/SearchDestinationBar
 
 const Destinations = () => {
   return (
-    <div>
+    <div className="bg-white dark:bg-black dark:text-white">
       <Header backgroundImage="https://kenasih.com/luhanoq/2023/03/PDIKM.jpg" title="Destinasi Wisata" />
       <div className="container max-w-7xl mx-auto py-8">
-        <div className="px-2 flex flex-col lg:flex-row lg:space-x-6">
-          <div className="mx-2 lg:w-1/4 mb-6 lg:mb-0 flex-row">
+        <div className="px-2 flex flex-col lg:flex-row lg:space-x-6 lg:space-y-0 space-y-6">
+          <div className="mx-2 lg:w-1/4 flex-shrink-0">
             <SearchDestinationBar />
-            {/* Location Filter */}
             <LocationFilter />
           </div>
           <DestinationList />

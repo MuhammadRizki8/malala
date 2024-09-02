@@ -3,7 +3,7 @@ import LogoLight from '../assets/images/LogoLight.png';
 const Footer = () => {
   return (
     <>
-      <footer className="mt-8 bg-green-800 dark:bg-gray-900">
+      <footer className=" bg-green-800 dark:bg-gray-900">
         <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
           <div className="md:flex md:justify-between">
             <div className="mb-6 md:mb-0">
