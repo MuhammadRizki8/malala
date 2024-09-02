@@ -2,7 +2,7 @@ import { FaListAlt, FaAward, FaUserTie, FaHandHoldingUsd } from 'react-icons/fa'
 
 const FeaturesSection = () => {
   return (
-    <section className="bg-green-800 py-8">
+    <section className="bg-green-800 py-8 px-4">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-4 text-center">
         {/* Feature 1 */}
         <div className="bg-green-600 p-6 rounded-lg flex flex-col items-center justify-center">

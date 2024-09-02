@@ -2,7 +2,7 @@ import { FiCheckCircle, FiCalendar, FiHeadphones } from 'react-icons/fi';
 
 const WhyChooseUs = () => {
   return (
-    <section className="text-center py-12 max-w-7xl mx-auto">
+    <section className="text-center py-12 max-w-7xl mx-4 md:mx-auto">
       <h2 className="text-2xl font-bold mb-4">Mengapa Memilih Kami?</h2>
       <p className="text-gray-600 mb-8">Destinasi populer ini memiliki banyak hal untuk ditawarkan</p>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
