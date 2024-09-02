@@ -68,22 +68,42 @@ const Navbar = () => {
             } md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 ${isHomePage ? 'md:bg-transparent md:dark:bg-transparent' : 'md:bg-white md:dark:bg-gray-900'} dark:border-gray-700`}
           >
             <li>
-              <Link to="/" className={`block py-2 px-3 ${isHomePage ? (isScrolled ? 'text-green-700 hover:text-green-800' : 'text-white dark:text-gray-300') : 'text-green-700 hover:text-800'}`}>
+              <Link
+                to="/"
+                className={`block py-2 px-3 ${
+                  isHomePage && isMenuOpen && !isDarkMode ? 'text-green-700 hover:text-green-800' : isHomePage ? (isScrolled ? 'text-green-700 hover:text-green-800' : 'text-white dark:text-gray-300') : 'text-green-700 hover:text-800'
+                }`}
+              >
                 Beranda
               </Link>
             </li>
             <li>
-              <Link to="/destinations" className={`block py-2 px-3 ${isHomePage ? (isScrolled ? 'text-green-700 hover:text-green-800' : 'text-white dark:text-gray-300') : 'text-green-700 hover:text-800'}`}>
+              <Link
+                to="/destinations"
+                className={`block py-2 px-3 ${
+                  isHomePage && isMenuOpen && !isDarkMode ? 'text-green-700 hover:text-green-800' : isHomePage ? (isScrolled ? 'text-green-700 hover:text-green-800' : 'text-white dark:text-gray-300') : 'text-green-700 hover:text-800'
+                }`}
+              >
                 Destinasi
               </Link>
             </li>
             <li>
-              <Link to="/about" className={`block py-2 px-3 ${isHomePage ? (isScrolled ? 'text-green-700 hover:text-green-800' : 'text-white dark:text-gray-300') : 'text-green-700 hover:text-800'}`}>
+              <Link
+                to="/about"
+                className={`block py-2 px-3 ${
+                  isHomePage && isMenuOpen && !isDarkMode ? 'text-green-700 hover:text-green-800' : isHomePage ? (isScrolled ? 'text-green-700 hover:text-green-800' : 'text-white dark:text-gray-300') : 'text-green-700 hover:text-800'
+                }`}
+              >
                 Tentang Kami
               </Link>
             </li>
             <li>
-              <Link to="/contact" className={`block py-2 px-3 ${isHomePage ? (isScrolled ? 'text-green-700 hover:text-green-800' : 'text-white dark:text-gray-300') : 'text-green-700 hover:text-800'}`}>
+              <Link
+                to="/contact"
+                className={`block py-2 px-3 ${
+                  isHomePage && isMenuOpen && !isDarkMode ? 'text-green-700 hover:text-green-800' : isHomePage ? (isScrolled ? 'text-green-700 hover:text-green-800' : 'text-white dark:text-gray-300') : 'text-green-700 hover:text-800'
+                }`}
+              >
                 Kontak
               </Link>
             </li>
