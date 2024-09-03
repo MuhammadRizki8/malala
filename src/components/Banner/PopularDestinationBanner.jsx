@@ -27,7 +27,7 @@ const PopularDestinationBanner = ({
             <span className="inline-block text-xs font-normal sm:text-base bg-green-800 dark:bg-green-600 text-white font-poppins md:font-bold px-4 py-1 rounded-full">Wisata Terpopuler</span>
           </div>
 
-          <h2 className="text-3xl lg:text-5xl font-medium font-poppins mb-1 md:mb-3">{destinationName}</h2>
+          <h2 className="font-volkhov text-3xl lg:text-5xl font-medium font-poppins mb-1 md:mb-3">{destinationName}</h2>
           <div className="flex items-baseline">
             <FaMapMarkerAlt className="mr-1 text-white w-3 h-3 sm:w-5 sm:h-5" />
             <p className="text-xs lg:text-lg font-poppins mb-4">{location}</p>

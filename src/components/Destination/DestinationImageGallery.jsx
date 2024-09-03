@@ -40,7 +40,7 @@ const DestinationImageGallery = () => {
       </a>
 
       {/* Informasi Tujuan */}
-      <h1 className="text-xl md:text-2xl font-semibold md:font-bold text-green-700 dark:text-green-400 mb-4">Nagari Saribu Rumah Gadang</h1>
+      <h1 className="text-xl md:text-2xl lg:text-4xl font-semibold md:font-bold text-green-700 dark:text-green-400 mb-4 font-volkhov">Nagari Saribu Rumah Gadang</h1>
       <div className="flex items-center text-gray-600 dark:text-gray-300 text-sm mb-4">
         <FaMapMarkerAlt className="mr-1 text-green-600 dark:text-green-400 w-4 sm:w-3 sm:h-4" />
         <p>Solok</p>

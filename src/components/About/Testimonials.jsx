@@ -58,7 +58,7 @@ const TestimonialCarousel = () => {
 
   return (
     <section className="py-8 px-4 md:py-12 md:px-8 bg-gray-50 dark:bg-gray-900 transition duration-300">
-      <h2 className="text-center text-2xl md:text-3xl font-bold mb-8 md:mb-10 text-gray-800 dark:text-gray-200">What Our Customers Say</h2>
+      <h2 className="text-center text-2xl md:text-3xl font-bold mb-8 md:mb-10 text-gray-800 dark:text-gray-200 font-volkhov">What Our Customers Say</h2>
       <div className="flex flex-col sm:flex-row justify-center items-center">
         <button onClick={handlePrev} className="hidden sm:block p-2 text-gray-500 hover:text-green-500 transition duration-300" aria-label="Previous Testimonial">
           <FaChevronLeft size={30} />

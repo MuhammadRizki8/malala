@@ -16,7 +16,7 @@ const InfoPanel = ({ name, description, categories }) => {
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-5 sm:gap-6">
         {/* Kolom Pertama: Nama Lokasi dan Deskripsi */}
         <div className="col-span-4 border-b sm:border-r border-slate-300 dark:border-slate-600 sm:pr-6 pr-0 sm:border-b-0 pb-4 sm:pb-0">
-          <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-poppins mb-2 text-green-700 dark:text-green-500">{name}</h3>
+          <h3 className="font-volkhov text-2xl sm:text-3xl lg:text-4xl font-bold font-poppins mb-2 text-green-700 dark:text-green-500">{name}</h3>
           <p className="text-slate-600 dark:text-slate-400 text-xs sm:text-sm lg:text-base">{description}</p>
         </div>
 

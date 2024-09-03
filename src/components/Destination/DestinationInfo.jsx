@@ -44,7 +44,7 @@ const DestinationInfo = () => {
 
       {/* Description Section */}
       <div className="mt-6 p-4 md:p-6 bg-white dark:bg-gray-800 rounded-lg">
-        <h2 className="text-xl font-bold text-gray-800 dark:text-gray-100">Deskripsi</h2>
+        <h2 className="text-xl font-bold text-gray-800 dark:text-gray-100 font-volkhov">Deskripsi</h2>
         <p className="text-xs md:text-base mt-4 text-gray-600 dark:text-gray-300 leading-relaxed">
           Nagari 1000 Rumah Gadang, terletak di Solok Selatan, Sumatra Barat, adalah sebuah kawasan wisata yang menawarkan pengalaman mendalam ke dalam kebudayaan Minangkabau yang otentik. Kawasan ini terkenal dengan deretan Rumah Gadang,
           rumah adat tradisional Minangkabau yang megah dan berornamen khas.

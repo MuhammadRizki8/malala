@@ -18,7 +18,7 @@ const LocationSection = () => {
   return (
     <section className="py-16 w-full sm:w-10/12 flex flex-col justify-center items-center mx-auto">
       <div className="text-center mb-4 max-w-2xl">
-        <h2 className="text-xl md:text-3xl lg:text-4xl font-medium font-poppins mb-4 text-green-600">Jelajahi Destinasi Wisata Menarik</h2>
+        <h2 className="font-volkhov text-xl md:text-3xl lg:text-4xl font-medium font-poppins mb-4 text-green-600">Jelajahi Destinasi Wisata Menarik</h2>
         <p className="text-sm px-6 md:text-base font-light font-poppins">Rencanakan perjalanan wisata anda dengan panduan, kiat perjalanan, informasi destinasi, dan inspirasi dari kami.</p>
       </div>
 

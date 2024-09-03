@@ -5,7 +5,7 @@ const HeroSection = () => {
     <div className="relative h-[80vh] sm:h-screen w-full bg-center bg-cover bg-fixed" style={{ backgroundImage: `url(${heroImage})` }}>
       <div className="flex flex-col items-center justify-center h-full bg-black bg-opacity-50 px-4">
         <p className="max-w-screen-lg text-white text-xs md:text-lg lg:text-2xl font-light font-poppins text-center mb-8">Jelajahi Budaya dan Alam Minangkabau bersama</p>
-        <h1 className="max-w-screen-lg text-white text-5xl md:text-7xl lg:text-8xl font-normal font-poppins text-center mb-4 md:w-11/12 lg:w-3/4">MALALA</h1>
+        <h1 className="font-volkhov max-w-screen-lg text-white text-5xl md:text-7xl lg:text-8xl font-normal font-poppins text-center mb-4 md:w-11/12 lg:w-3/4">MALALA</h1>
 
         <div className="w-full max-w-sm sm:max-w-md md:max-w-xl lg:max-w-3xl flex flex-row items-center p-2 space-y-2 sm:space-y-0 sm:space-x-2 bg-transparent rounded-sm">
           <div className="flex p-2 w-full space-x-2 sm:space-x-4 rounded-sm items-center transition-all duration-300 hover:bg-gray-800 hover:rounded-md">

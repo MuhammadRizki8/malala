@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;500;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;500;700&display=swap'); */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 * {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Mulish', sans-serif;
 }
 /* Hilangkan scrollbar di Chrome, Safari, dan versi modern dari Edge */
 .scrollbar-hide::-webkit-scrollbar {

@@ -8,7 +8,7 @@ const DestinationCardRec = ({ title, location, imageUrl, buttonText = 'Lihat Sel
 
       {/* Overlay Text */}
       <div className="absolute inset-0 bg-black bg-opacity-50 dark:bg-opacity-70 flex flex-col justify-center px-4">
-        <h2 className="text-white text-xl font-bold">{title}</h2>
+        <h2 className="font-volkhov text-white text-xl font-bold">{title}</h2>
         <p className="text-gray-300 dark:text-gray-400">{location}</p>
       </div>
 

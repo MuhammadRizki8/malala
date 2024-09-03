@@ -1,6 +1,6 @@
 const ProfileSection = () => {
   return (
-    <section className="mb-12 w-full mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="mt-12 w-full mx-auto px-4 sm:px-6 lg:px-8">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Left Side - Image */}
         <div className="flex items-center justify-center">
@@ -10,11 +10,10 @@ const ProfileSection = () => {
         {/* Right Side - Text */}
         <div className="flex flex-col justify-center md:pr-10">
           <h2 className="text-lg text-green-500 dark:text-green-400 font-semibold">Selamat Datang di Website Kami</h2>
-          <h1 className="text-2xl sm:text-3xl font-bold mb-4 text-gray-800 dark:text-gray-100">Tentang Malala</h1>
+          <h1 className="text-2xl sm:text-3xl font-bold mb-4 text-gray-800 dark:text-gray-100 font-volkhov">Tentang Malala</h1>
           <p className="text-base sm:text-lg text-gray-700 dark:text-gray-300 mb-4">
-            <span className="text-green-500 dark:text-green-400 font-bold">Malala</span>
-            adalah platform terbaik untuk menjelajahi keindahan Minang dan Sumatra Barat. Kami berdedikasi untuk menyediakan pengalaman wisata yang tak terlupakan dengan berbagai pilihan paket yang dirancang khusus untuk memenuhi kebutuhan
-            liburan Anda.
+            <span className="font-volkhov text-green-700 dark:text-green-600 font-bold">Malala </span> adalah platform terbaik untuk menjelajahi keindahan Minang dan Sumatra Barat. Kami berdedikasi untuk menyediakan pengalaman wisata yang
+            tak terlupakan dengan berbagai pilihan paket yang dirancang khusus untuk memenuhi kebutuhan liburan Anda.
           </p>
         </div>
       </div>

@@ -18,7 +18,7 @@ const DestinationCard = ({ image, location, name, rating, reviews }) => {
           <FaMapMarkerAlt className="mr-1 text-green-600 dark:text-green-400 w-4 h-4 sm:w-5 sm:h-5" />
           <span className="text-sm sm:text-base">{location}</span>
         </p>
-        <h3 className="text-base truncate ... sm:text-lg font-medium font-poppins mb-2 dark:text-slate-100">{name}</h3>
+        <h3 className="font-volkhov text-base truncate ... sm:text-lg font-medium font-poppins mb-2 dark:text-slate-100">{name}</h3>
 
         <div className="flex items-center justify-between mt-2">
           <div className="flex items-center">

@@ -3,7 +3,11 @@ export default {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   darkMode: 'class',
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        volkhov: ['Volkhov', 'serif'],
+      },
+    },
   },
   plugins: [require('tailwind-scrollbar')],
 };

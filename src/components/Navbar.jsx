@@ -42,7 +42,7 @@ const Navbar = () => {
         <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           <img src={isHomePage ? (isScrolled ? LogoDark : LogoLight) : LogoDark} className="h-10" alt="Logo" />
           <span
-            className={`hidden sm:block self-center text-2xl font-semibold whitespace-nowrap ${
+            className={`font-volkhov hidden sm:block self-center text-2xl font-semibold whitespace-nowrap ${
               isHomePage ? (isScrolled ? 'text-green-700 hover:text-green-800' : 'text-white dark:text-white') : 'text-green-700 dark:text-white hover:text-green-800'
             }`}
           >
@@ -71,25 +71,34 @@ const Navbar = () => {
             } dark:border-gray-700`}
           >
             <li>
-              <Link to="/" className={`block py-2 px-3 ${isHomePage ? (isScrolled ? 'text-green-700 hover:text-green-800 dark:text-white' : 'text-white dark:text-white') : 'text-green-700 dark:text-white hover:text-green-800'}`}>
+              <Link
+                to="/"
+                className={`block py-2 px-3 ${isHomePage ? (isScrolled ? 'text-green-700 hover:text-green-800 dark:text-white' : 'text-green-600 md:text-white dark:text-white') : 'text-green-700 dark:text-white hover:text-green-800'}`}
+              >
                 Beranda
               </Link>
             </li>
             <li>
               <Link
                 to="/destinations"
-                className={`block py-2 px-3 ${isHomePage ? (isScrolled ? 'text-green-700 hover:text-green-800 dark:text-white' : 'text-white dark:text-white') : 'text-green-700 dark:text-white hover:text-green-800'}`}
+                className={`block py-2 px-3 ${isHomePage ? (isScrolled ? 'text-green-700 hover:text-green-800 dark:text-white' : 'text-green-600 md:text-white dark:text-white') : 'text-green-700 dark:text-white hover:text-green-800'}`}
               >
                 Destinasi
               </Link>
             </li>
             <li>
-              <Link to="/about" className={`block py-2 px-3 ${isHomePage ? (isScrolled ? 'text-green-700 hover:text-green-800 dark:text-white' : 'text-white dark:text-white') : 'text-green-700 dark:text-white hover:text-green-800'}`}>
+              <Link
+                to="/about"
+                className={`block py-2 px-3 ${isHomePage ? (isScrolled ? 'text-green-700 hover:text-green-800 dark:text-white' : ' text-green-600 md:text-white dark:text-white') : 'text-green-700 dark:text-white hover:text-green-800'}`}
+              >
                 Tentang Kami
               </Link>
             </li>
             <li>
-              <Link to="/contact" className={`block py-2 px-3 ${isHomePage ? (isScrolled ? 'text-green-700 hover:text-green-800 dark:text-white' : 'text-white dark:text-white') : 'text-green-700 dark:text-white hover:text-green-800'}`}>
+              <Link
+                to="/contact"
+                className={`block py-2 px-3 ${isHomePage ? (isScrolled ? 'text-green-700 hover:text-green-800 dark:text-white' : 'text-green-600 md:text-white dark:text-white') : 'text-green-700 dark:text-white hover:text-green-800'}`}
+              >
                 Kontak
               </Link>
             </li>
