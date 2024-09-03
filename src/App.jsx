@@ -9,6 +9,8 @@ import Contact from './pages/Contact';
 import DestinationDetail from './pages/DestinationDetail';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import LoadingSpinner from './components/LoadingSpinner';
+import { useState, useEffect } from 'react';
 
 AOS.init({
   duration: 1000, // Durasi animasi
@@ -16,6 +18,18 @@ AOS.init({
 });
 
 const App = () => {
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    // Simulate a loading delay (e.g., fetching data or preparing resources)
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000); // Adjust the delay as needed
+
+    return () => clearTimeout(timer);
+  }, []);
+  if (loading) {
+    return <LoadingSpinner />;
+  }
   return (
     <Router>
       <Navbar />
