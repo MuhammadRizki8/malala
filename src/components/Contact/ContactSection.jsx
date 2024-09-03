@@ -6,8 +6,8 @@ const ContactForm = () => {
       <div className="container mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Left: Form */}
-          <div>
-            <h2 className="text-lg sm:text-2xl md:text-3xl font-bold mb-4 text-gray-800 dark:text-gray-200 font-volkhov">Get in touch</h2>
+          <div data-aos="fade-right">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 text-gray-800 dark:text-gray-200 font-volkhov">Get in touch</h2>
             <p className="text-xs sm:text-base mb-6 text-gray-600 dark:text-gray-400">
               Kami selalu senang mendengar dari Anda! Apakah Anda memiliki pertanyaan, saran, atau ingin berbagi pengalaman wisata Anda? Jangan ragu untuk menghubungi kami melalui salah satu cara berikut:
             </p>
@@ -49,7 +49,7 @@ const ContactForm = () => {
           </div>
 
           {/* Right: Contact Information */}
-          <div className="space-y-6">
+          <div className="space-y-6" data-aos="fade-left">
             <iframe
               title="Map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.716861227449!2d110.3670614746055!3d-7.801194677297966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a579f20203db7%3A0x3faef5f06e7b6454!2sYogyakarta!5e0!3m2!1sen!2sid!4v1693411510232!5m2!1sen!2sid"

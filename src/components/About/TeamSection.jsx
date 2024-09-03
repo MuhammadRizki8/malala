@@ -33,7 +33,7 @@ const teamMembers = [
 
 const TeamSection = () => {
   return (
-    <section className="py-12 bg-gray-100 dark:bg-gray-900 transition duration-300">
+    <section className="py-12 bg-gray-100 dark:bg-gray-900 transition duration-300" data-aos="fade-up">
       <div className="text-center mb-8">
         <h2 className="text-2xl lg:text-3xl font-volkhov font-bold text-gray-800 dark:text-gray-200">Our Teams</h2>
         <p className="text-gray-600 dark:text-gray-400">Meet the talented individuals behind our success</p>

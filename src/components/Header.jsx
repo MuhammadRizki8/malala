@@ -12,7 +12,9 @@ const Header = ({ backgroundImage, title }) => {
       <div className="absolute inset-0 bg-black opacity-40 dark:opacity-60"></div>
 
       <div className="relative mx-auto w-full max-w-screen-xl text-white p-6 rounded-md">
-        <h1 className="text-center md:text-start text-2xl sm:text-3xl font-bold font-volkhov">{title}</h1>
+        <h1 className="text-center md:text-start text-2xl sm:text-3xl font-bold font-volkhov" data-aos="fade-right">
+          {title}
+        </h1>
       </div>
     </div>
   );

@@ -63,7 +63,7 @@ const TestimonialCarousel = () => {
         <button onClick={handlePrev} className="hidden sm:block p-2 text-gray-500 hover:text-green-500 transition duration-300" aria-label="Previous Testimonial">
           <FaChevronLeft size={30} />
         </button>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-4" data-aos="fade-up">
           {[testimonials[current], testimonials[(current + 1) % total]].slice(0, isLargeScreen ? 2 : 1).map((testimonial, index) => (
             <div key={index} className="bg-white dark:bg-gray-800 p-6 sm:p-8 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
               <div className="mb-4 sm:mb-6">

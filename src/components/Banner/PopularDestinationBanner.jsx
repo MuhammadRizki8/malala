@@ -19,7 +19,7 @@ const PopularDestinationBanner = ({
       <div className="absolute inset-0 dark:bg-black dark:opacity-50"></div> {/* Dark overlay for better text visibility */}
       <div className="relative flex flex-col sm:flex-row items-center lg:p-6 h-full max-w-7xl mx-auto text-white">
         <div className="h-1/3 lg:h-full px-10 py-2">
-          <img src={destinationImage} alt={destinationName} className="h-full object-contain lg:object-cover" />
+          <img src={destinationImage} alt={destinationName} className="h-full object-contain lg:object-cover" data-aos="flip-right" data-aos-delay="1000" />
         </div>
 
         <div className="pr-10 py-0 sm:py-4 px-10 w-full lg:w-2/4">

@@ -26,7 +26,7 @@ const BlogSection = () => {
         <h3 className="text-base sm:text-xl font-medium font-poppins text-gray-900 dark:text-slate-300">Temukan inspirasi wisata dan cerita menarik dari para penulis kami.</h3>
         <button className="text-xs sm:text-base text-green-600 dark:text-green-400 font-poppins transition duration-300 transform hover:scale-105 hidden sm:block">Lihat Semua</button>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" data-aos="fade-up">
         {blogs.map((blog, index) => (
           <BlogCard key={index} {...blog} />
         ))}

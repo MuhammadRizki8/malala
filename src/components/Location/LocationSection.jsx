@@ -63,7 +63,7 @@ const LocationSection = () => {
           <button className="text-xs sm:text-base text-green-600 font-poppins transition duration-300 transform hover:scale-105">Lihat Semua</button>
         </div>
 
-        <div className="grid grid-cols md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols md:grid-cols-2 lg:grid-cols-4 gap-6" data-aos="fade-up">
           {filteredDestinations.map((destination, index) => (
             <DestinationCard key={index} {...destination} />
           ))}

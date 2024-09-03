@@ -1,7 +1,7 @@
 const PromotionalBanner = () => {
   return (
     <section className="max-w-screen-xl mx-auto">
-      <div className="mx-auto min-h-48 flex flex-col lg:flex-row space-x-2 items-center justify-between px-4 sm:px-6 lg:px-8 text-white">
+      <div className="mx-auto min-h-48 flex flex-col lg:flex-row space-x-2 items-center justify-between px-4 sm:px-6 lg:px-8 text-white" data-aos="fade-up">
         {/* Text and Button Section */}
         <div className="h-40 lg:h-64 lg:w-2/3 text-center lg:text-left mb-6 lg:mb-0 relative bg-cover bg-center rounded-md" style={{ backgroundImage: `url('https://freerangestock.com/sample/143221/beach-from-above.jpg')` }}>
           {/* Overlay */}
