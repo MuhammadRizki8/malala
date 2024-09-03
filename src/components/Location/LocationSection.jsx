@@ -43,7 +43,7 @@ const LocationSection = () => {
         </div>
 
         {/* Buttons for larger screens */}
-        <div className="hidden sm:flex pt-1 flex-wrap space-x-4 justify-center">
+        <div className="hidden sm:flex pt-1 flex-wrap space-x-4 justify-center" data-aos="fade-up" data-aos-delay="200">
           {data.locations.map((location, index) => (
             <LocationButton key={index} location={location} activeLocation={activeLocation} setActiveLocation={setActiveLocation} />
           ))}
@@ -51,7 +51,7 @@ const LocationSection = () => {
       </div>
 
       {/* Image and InfoPanel */}
-      <div className="relative w-full max-w-screen-lg mx-auto mb-24">
+      <div className="relative w-full max-w-screen-lg mx-auto mb-24" data-aos="fade-up" data-aos-delay="400">
         <img src={activeLocation.image} alt={activeLocation.name} className="w-full shadow-lg h-96 object-cover" />
         <InfoPanel name={activeLocation.name} description={activeLocation.description} categories={activeLocation.categories} />
       </div>

@@ -7,6 +7,14 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Contact from './pages/Contact';
 import DestinationDetail from './pages/DestinationDetail';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init({
+  duration: 1000, // Durasi animasi
+  once: true, // Animasi hanya berjalan sekali
+});
+
 const App = () => {
   return (
     <Router>

@@ -25,7 +25,7 @@ const InfoPanel = ({ name, description, categories }) => {
           {categories.map((category, index) => {
             const { color, icon: Icon } = categoryStyles[category] || { color: 'text-gray-500 dark:text-gray-400', icon: null };
             return (
-              <span key={index} className={`bg-white dark:bg-slate-700 ${color} px-3 py-1 rounded-sm shadow-lg text-xs sm:text-sm font-poppins flex items-center border dark:border-slate-600`}>
+              <span data-aos="zoom-out" data-aos-delay="700" key={index} className={`bg-white dark:bg-slate-700 ${color} px-3 py-1 rounded-sm shadow-lg text-xs sm:text-sm font-poppins flex items-center border dark:border-slate-600`}>
                 {Icon && <Icon className="inline-block mr-1" />} {category}
               </span>
             );

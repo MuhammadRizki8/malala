@@ -21,9 +21,12 @@ const LocationFilter = () => {
   return (
     <div className="mx-auto max-w-sm mt-2 p-2 bg-white dark:bg-gray-800 rounded-lg shadow-md">
       <div className="lg:hidden">
-        <button onClick={() => setIsModalOpen(true)} className="w-full p-2 text-sm font-medium text-white bg-green-700 rounded-lg hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300">
-          <FaFilter className="mr-2" />
+        <button
+          onClick={() => setIsModalOpen(true)}
+          className=" lg:hidden w-full p-2 text-sm font-medium text-white bg-green-700 rounded-lg hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 flex items-center justify-between"
+        >
           Filter
+          <FaFilter className="" />
         </button>
       </div>
       <Modal
