@@ -6,14 +6,14 @@ import TestimonialCarousel from '../components/About/Testimonials';
 import TeamSection from '../components/About/TeamSection';
 const About = () => {
   return (
-    <>
+    <div className="bg-white dark:bg-gray-900 dark:text-gray-100">
       <Header backgroundImage="https://kenasih.com/luhanoq/2023/03/PDIKM.jpg" title="Tentang Kami" />
       <WhyChooseUs />
       <ProfileSection />
       <FeaturesSection />
       <TestimonialCarousel />
       <TeamSection />
-    </>
+    </div>
   );
 };
 

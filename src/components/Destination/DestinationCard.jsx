@@ -23,9 +23,9 @@ const DestinationCard = ({ image, location, name, rating, reviews }) => {
         <div className="flex items-center justify-between mt-2">
           <div className="flex items-center">
             {renderStars()}
-            <span className="ml-2 text-gray-800 dark:text-slate-300 font-poppins text-xs sm:text-sm">{rating}</span>
+            <span className="ml-1 text-gray-800 dark:text-slate-300 font-poppins text-xs sm:text-sm">{rating}</span>
           </div>
-          <p className="text-xs sm:text-sm text-gray-600 dark:text-slate-400 font-poppins">({reviews} reviews)</p>
+          <p className="text-xs sm:text-sm text-gray-600 dark:text-slate-400 font-poppins">({reviews} ulasan)</p>
         </div>
       </div>
     </Link>

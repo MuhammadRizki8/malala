@@ -9,11 +9,12 @@ const ProfileSection = () => {
 
         {/* Right Side - Text */}
         <div className="flex flex-col justify-center md:pr-10">
-          <h2 className="text-lg text-green-500 font-semibold">Selamat Datang di Website Kami</h2>
-          <h1 className="text-2xl sm:text-3xl font-bold mb-4 text-gray-800">Tentang Malala</h1>
-          <p className="text-base sm:text-lg text-gray-700 mb-4">
-            <span className="text-green-500 font-bold">Malala</span> adalah platform terbaik untuk menjelajahi keindahan Minang dan Sumatra Barat. Kami berdedikasi untuk menyediakan pengalaman wisata yang tak terlupakan dengan berbagai
-            pilihan paket yang dirancang khusus untuk memenuhi kebutuhan liburan Anda.
+          <h2 className="text-lg text-green-500 dark:text-green-400 font-semibold">Selamat Datang di Website Kami</h2>
+          <h1 className="text-2xl sm:text-3xl font-bold mb-4 text-gray-800 dark:text-gray-100">Tentang Malala</h1>
+          <p className="text-base sm:text-lg text-gray-700 dark:text-gray-300 mb-4">
+            <span className="text-green-500 dark:text-green-400 font-bold">Malala</span>
+            adalah platform terbaik untuk menjelajahi keindahan Minang dan Sumatra Barat. Kami berdedikasi untuk menyediakan pengalaman wisata yang tak terlupakan dengan berbagai pilihan paket yang dirancang khusus untuk memenuhi kebutuhan
+            liburan Anda.
           </p>
         </div>
       </div>
@@ -21,28 +22,28 @@ const ProfileSection = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
         {/* Left Side - Text */}
         <div className="flex flex-col justify-center md:text-right md:pl-10">
-          <h1 className="text-xl sm:text-2xl font-bold mb-4 text-green-600">Menyajikan Keindahan Minang yang Autentik untuk Anda</h1>
-          <p className="text-base sm:text-lg text-gray-700 mb-4">
+          <h1 className="text-xl sm:text-2xl font-bold mb-4 text-green-600 dark:text-green-400">Menyajikan Keindahan Minang yang Autentik untuk Anda</h1>
+          <p className="text-base sm:text-lg text-gray-700 dark:text-gray-300 mb-4">
             Kami berada tepat di jantung Minang, siap menyuguhkan pengalaman nyata kehidupan kota! Dengan bertahun-tahun pengalaman di hampir setiap sektor pariwisata, kami menawarkan paket lengkap dengan harga terendah untuk berwisata,
             belajar, dan bersenang-senang tanpa khawatir dan tanpa stres.
           </p>
 
           {/* Stats Section */}
-          <div className="flex justify-start md:justify-end space-x-0 md:space-x-5 text-center text-gray-700">
+          <div className="flex justify-start md:justify-end space-x-0 md:space-x-5 text-center text-gray-700 dark:text-gray-300">
             <div className="flex flex-col">
-              <h3 className="text-base sm:text-2xl font-bold text-green-500">5+</h3>
+              <h3 className="text-base sm:text-2xl font-bold text-green-500 dark:text-green-400">5+</h3>
               <p className="text-[10px] sm:text-base">Tahun Pengalaman</p>
             </div>
             <div className="flex flex-col">
-              <h3 className="text-base sm:text-2xl font-bold text-green-500">10+</h3>
+              <h3 className="text-base sm:text-2xl font-bold text-green-500 dark:text-green-400">10+</h3>
               <p className="text-[10px] sm:text-base">Pemandu Profesional</p>
             </div>
             <div className="flex flex-col">
-              <h3 className="text-base sm:text-2xl font-bold text-green-500">10K+</h3>
+              <h3 className="text-base sm:text-2xl font-bold text-green-500 dark:text-green-400">10K+</h3>
               <p className="text-[10px] sm:text-base">Ulasan Pengguna</p>
             </div>
             <div className="flex flex-col">
-              <h3 className="text-base sm:text-2xl font-bold text-green-500">50+</h3>
+              <h3 className="text-base sm:text-2xl font-bold text-green-500 dark:text-green-400">50+</h3>
               <p className="text-[10px] sm:text-base">Event Budaya</p>
             </div>
           </div>

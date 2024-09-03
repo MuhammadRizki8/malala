@@ -2,41 +2,41 @@
   {
     "id": 1,
     "rating": 5.0,
-    "title": "Amazing",
+    "title": "Luar Biasa",
     "author": "Omar Siphron",
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "content": "Pengalaman yang tak terlupakan! Semua yang saya lihat dan lakukan benar-benar menakjubkan. Tidak ada yang bisa saya keluhkan.",
     "imageUrl": "https://ih1.redbubble.net/image.2998421987.7898/flat,750x,075,f-pad,750x1000,f8f8f8.u1.jpg"
   },
   {
     "id": 2,
-    "rating": 5.0,
-    "title": "Amazing",
+    "rating": 4.8,
+    "title": "Sangat Memuaskan",
     "author": "Cristofer Ekstrom Bothman",
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "content": "Semuanya sangat terorganisir dengan baik, dan saya benar-benar menikmati setiap momennya. Akan kembali lagi.",
     "imageUrl": "https://ih1.redbubble.net/image.2998421987.7898/flat,750x,075,f-pad,750x1000,f8f8f8.u1.jpg"
   },
   {
     "id": 3,
     "rating": 5.0,
-    "title": "Amazing",
+    "title": "Pengalaman Hebat",
     "author": "Kaiya Lubin",
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "content": "Saya sangat terkesan dengan layanan dan kualitas yang ditawarkan. Ini benar-benar sesuai dengan harapan saya.",
     "imageUrl": "https://ih1.redbubble.net/image.2998421987.7898/flat,750x,075,f-pad,750x1000,f8f8f8.u1.jpg"
   },
   {
     "id": 4,
-    "rating": 5.0,
-    "title": "Amazing",
+    "rating": 4.9,
+    "title": "Fantastis",
     "author": "Erin Septimus",
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "content": "Tempat ini benar-benar indah dan sangat direkomendasikan untuk siapa saja yang ingin merasakan keindahan alam.",
     "imageUrl": "https://ih1.redbubble.net/image.2998421987.7898/flat,750x,075,f-pad,750x1000,f8f8f8.u1.jpg"
   },
   {
     "id": 5,
-    "rating": 5.0,
-    "title": "Amazing",
+    "rating": 4.7,
+    "title": "Mengesankan",
     "author": "Terry George",
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "content": "Semua berjalan dengan sangat baik. Pemandangan dan suasananya benar-benar membuat saya terkesan. Sangat direkomendasikan!",
     "imageUrl": "https://ih1.redbubble.net/image.2998421987.7898/flat,750x,075,f-pad,750x1000,f8f8f8.u1.jpg"
   }
 ]

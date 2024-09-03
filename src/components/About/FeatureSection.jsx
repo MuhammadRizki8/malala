@@ -2,42 +2,38 @@ import { FaListAlt, FaAward, FaUserTie, FaHandHoldingUsd } from 'react-icons/fa'
 
 const FeaturesSection = () => {
   return (
-    <section className="bg-green-800 py-8 px-4">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-4 text-center">
+    <section className="bg-green-800 dark:bg-gray-700 py-12 px-4 transition duration-300">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-6 text-center">
         {/* Feature 1 */}
-        <div className="bg-green-600 p-6 rounded-lg flex flex-col items-center justify-center">
-          <div className="text-white mb-2">
-            {/* Icon for Feature 1 */}
-            <FaListAlt className="text-4xl" />
+        <div className="bg-green-600 dark:bg-gray-800 p-6 rounded-lg flex flex-col items-center justify-center hover:shadow-lg transition duration-300">
+          <div className="text-white dark:text-green-400 mb-4">
+            <FaListAlt className="text-5xl" />
           </div>
-          <p className="text-white text-center">Paket Lengkap Untuk Semua Keinginan Anda</p>
+          <p className="text-white dark:text-gray-200 text-center text-sm md:text-base">Paket Lengkap Untuk Semua Keinginan Anda</p>
         </div>
 
         {/* Feature 2 */}
-        <div className="bg-green-600 p-6 rounded-lg flex flex-col items-center justify-center">
-          <div className="text-white mb-2">
-            {/* Icon for Feature 2 */}
-            <FaAward className="text-4xl" />
+        <div className="bg-green-600 dark:bg-gray-800 p-6 rounded-lg flex flex-col items-center justify-center hover:shadow-lg transition duration-300">
+          <div className="text-white dark:text-green-400 mb-4">
+            <FaAward className="text-5xl" />
           </div>
-          <p className="text-white text-center">Pengalaman Lebih Dari 5 Tahun</p>
+          <p className="text-white dark:text-gray-200 text-center text-sm md:text-base">Pengalaman Lebih Dari 5 Tahun</p>
         </div>
 
         {/* Feature 3 */}
-        <div className="bg-green-600 p-6 rounded-lg flex flex-col items-center justify-center">
-          <div className="text-white mb-2">
-            {/* Icon for Feature 3 */}
-            <FaUserTie className="text-4xl" />
+        <div className="bg-green-600 dark:bg-gray-800 p-6 rounded-lg flex flex-col items-center justify-center hover:shadow-lg transition duration-300">
+          <div className="text-white dark:text-green-400 mb-4">
+            <FaUserTie className="text-5xl" />
           </div>
-          <p className="text-white text-center">Panduan Pakar Untuk Anda</p>
+          <p className="text-white dark:text-gray-200 text-center text-sm md:text-base">Panduan Pakar Untuk Anda</p>
         </div>
 
         {/* Feature 4 */}
-        <div className="bg-green-600 p-6 rounded-lg flex flex-col items-center justify-center">
-          <div className="text-white mb-2">
-            {/* Icon for Feature 4 */}
-            <FaHandHoldingUsd className="text-4xl" />
+        <div className="bg-green-600 dark:bg-gray-800 p-6 rounded-lg flex flex-col items-center justify-center hover:shadow-lg transition duration-300">
+          <div className="text-white dark:text-green-400 mb-4">
+            <FaHandHoldingUsd className="text-5xl" />
           </div>
-          <p className="text-white text-center">Dijamin Menyenangkan dengan Harga Terbaik!</p>
+          <p className="text-white dark:text-gray-200 text-center text-sm md:text-base">Dijamin Menyenangkan dengan Harga Terbaik!</p>
         </div>
       </div>
     </section>
