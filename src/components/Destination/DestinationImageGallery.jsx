@@ -27,9 +27,13 @@ const DestinationImageGallery = () => {
       src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Saribu_Rumah_Gadang_1.jpg/220px-Saribu_Rumah_Gadang_1.jpg',
       alt: 'Pagaruyung Palace View 5',
     },
+    {
+      src: 'https://upload.wikimedia.org/wikipedia/commons/7/7b/Seribu_Rumah_Gadang.jpg',
+      alt: 'Pagaruyung Palace View 1',
+    },
   ];
 
-  const ThumbnailImage = ({ src, alt }) => <img className="h-auto w-full rounded-lg shadow-md object-cover" src={src} alt={alt} />;
+  const ThumbnailImage = ({ src, alt }) => <img className="h-full w-full rounded-md shadow-md object-cover" src={src} alt={alt} />;
 
   return (
     <div className="relative border-b mt-6 py-6 bg-white dark:bg-gray-900 max-w-7xl mx-auto">
@@ -53,7 +57,7 @@ const DestinationImageGallery = () => {
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
         {/* Gambar utama - 3 kolom pada layar besar */}
         <div className="lg:col-span-3 lg:max-h-[530px]">
-          <img className="h-full object-cover w-full rounded-lg shadow-lg" src={images[0].src} alt={images[0].alt} />
+          <img className="h-full object-cover w-full shadow-lg" src={images[0].src} alt={images[0].alt} />
         </div>
 
         {/* Thumbnails - 1 kolom pada layar besar */}

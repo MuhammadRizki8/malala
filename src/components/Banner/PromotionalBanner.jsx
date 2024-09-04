@@ -1,9 +1,9 @@
 const PromotionalBanner = () => {
   return (
     <section className="max-w-screen-xl mx-auto">
-      <div className="mx-auto min-h-48 flex flex-col lg:flex-row space-x-2 items-center justify-between px-4 sm:px-6 lg:px-8 text-white" data-aos="fade-up">
+      <div className="mx-auto min-h-48 flex flex-col lg:flex-row space-x-3 items-center justify-between px-4 sm:px-6 lg:px-8 text-white" data-aos="fade-up">
         {/* Text and Button Section */}
-        <div className="h-40 lg:h-64 lg:w-2/3 text-center lg:text-left mb-6 lg:mb-0 relative bg-cover bg-center rounded-md" style={{ backgroundImage: `url('https://freerangestock.com/sample/143221/beach-from-above.jpg')` }}>
+        <div className="h-40 lg:h-64 lg:w-full text-center lg:text-left mb-6 lg:mb-0 relative bg-cover bg-center " style={{ backgroundImage: `url('https://freerangestock.com/sample/143221/beach-from-above.jpg')` }}>
           {/* Overlay */}
           <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
@@ -19,8 +19,8 @@ const PromotionalBanner = () => {
         </div>
 
         {/* Video Section */}
-        <div className="hidden lg:block lg:w-1/3">
-          <div className="w-full h-40 md:h-48 lg:h-64 rounded-md overflow-hidden shadow-lg">
+        <div className="hidden lg:block w-1/2">
+          <div className="w-full h-40 md:h-48 lg:h-64  overflow-hidden shadow-lg">
             <iframe
               className="w-full h-full"
               src="https://www.youtube.com/embed/Gz-RG8dPuVk?si=KkCBG4HaVbF3z8-L"

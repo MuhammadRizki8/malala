@@ -9,11 +9,11 @@ const DestinationCard = ({ image, location, name, rating, reviews }) => {
   };
 
   return (
-    <Link to="/destinations/detail" className="bg-white dark:bg-slate-800 rounded-md shadow-lg overflow-hidden transition-colors duration-300">
+    <Link to="/destinations/detail" className="bg-white dark:bg-slate-800 border dark:border-slate-500 shadow-lg overflow-hidden transition-colors duration-300">
       <div className="overflow-hidden">
         <img src={image} alt={name} className="w-full h-40 sm:h-48 object-cover transform transition-transform duration-500 ease-in-out hover:scale-110" />
       </div>
-      <div className="p-4">
+      <div className="p-4 pt-2">
         <p className="mb-2 text-gray-600 dark:text-slate-300 font-poppins flex items-center">
           <FaMapMarkerAlt className="mr-1 text-green-600 dark:text-green-400 w-4 h-4 sm:w-5 sm:h-5" />
           <span className="text-sm sm:text-base">{location}</span>

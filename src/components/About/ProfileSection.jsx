@@ -13,7 +13,7 @@ const ProfileSection = () => {
         </div>
 
         {/* Right Side - Text */}
-        <div className="flex flex-col justify-center md:pr-10" data-aos="fade-up-left">
+        <div className="flex flex-col justify-center md:pr-10" data-aos="fade-up">
           <h2 className="text-lg text-green-500 dark:text-green-400 font-semibold">Selamat Datang di Website Kami</h2>
           <h1 className="text-2xl sm:text-3xl font-bold mb-4 text-gray-800 dark:text-gray-100 font-volkhov">Tentang Malala</h1>
           <p className="text-base sm:text-lg text-gray-700 dark:text-gray-300 mb-4">
@@ -54,7 +54,7 @@ const ProfileSection = () => {
         </div>
 
         {/* Right Side - Image */}
-        <div className="flex items-center justify-center" data-aos="fade-up-left">
+        <div className="flex items-center justify-center" data-aos="fade-up">
           <img src="https://akcdn.detik.net.id/visual/2020/09/18/potensi-wisata-pedesaan-lembah-harau-2_169.jpeg?w=650" alt="Keindahan Minang" className="shadow-lg w-full object-cover h-64 sm:h-80 md:h-96" />
         </div>
       </div>

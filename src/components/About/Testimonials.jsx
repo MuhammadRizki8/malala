@@ -65,7 +65,7 @@ const TestimonialCarousel = () => {
         </button>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-4" data-aos="fade-up">
           {[testimonials[current], testimonials[(current + 1) % total]].slice(0, isLargeScreen ? 2 : 1).map((testimonial, index) => (
-            <div key={index} className="bg-white dark:bg-gray-800 p-6 sm:p-8 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
+            <div key={index} className="bg-white dark:bg-gray-800 p-6 sm:p-8 rounded-sm shadow-lg transform transition duration-300 hover:scale-105">
               <div className="mb-4 sm:mb-6">
                 <img className="w-20 sm:w-24 h-20 sm:h-24 rounded-full mx-auto shadow-xl transform hover:scale-110 transition duration-300" src={testimonial.imgSrc} alt={testimonial.name} />
               </div>
@@ -76,7 +76,7 @@ const TestimonialCarousel = () => {
             </div>
           ))}
         </div>
-        <div className="flex space-x-2 sm:hidden">
+        <div className="flex space-x-2 mt-2 sm:hidden">
           <button onClick={handlePrev} className="sm:hidden p-2 text-gray-500 hover:text-green-500 transition duration-300" aria-label="Previous Testimonial">
             <FaChevronLeft size={30} />
           </button>

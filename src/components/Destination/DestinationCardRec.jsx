@@ -2,9 +2,9 @@ import PropTypes from 'prop-types';
 
 const DestinationCardRec = ({ title, location, imageUrl, buttonText = 'Lihat Selengkapnya' }) => {
   return (
-    <div className="relative w-full rounded-lg overflow-hidden shadow-lg">
+    <div className="relative w-full rounded-sm overflow-hidden shadow-lg">
       {/* Image Section */}
-      <img src={imageUrl} alt={title} className="w-full h-40 sm:h-60 object-cover" />
+      <img src={imageUrl} alt={title} className="w-full h-40 sm:h-56 object-cover" />
 
       {/* Overlay Text */}
       <div className="absolute inset-0 bg-black bg-opacity-50 dark:bg-opacity-70 flex flex-col justify-center px-4">

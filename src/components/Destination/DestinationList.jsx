@@ -24,7 +24,7 @@ const DestinationList = () => {
       {visibleCount < destinations.length && (
         <button
           onClick={loadMore}
-          className="mt-6 w-full px-4 py-2 text-green-600 hover:text-white rounded-lg border border-green-600 hover:bg-green-700 dark:border-green-500 dark:text-green-400 dark:hover:text-white dark:hover:bg-green-600"
+          className="mt-6 w-full px-4 py-2 text-green-600 hover:text-white rounded-sm border border-green-600 hover:bg-green-700 dark:border-green-500 dark:text-green-400 dark:hover:text-white dark:hover:bg-green-600"
         >
           Load More
         </button>
