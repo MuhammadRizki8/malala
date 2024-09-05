@@ -42,7 +42,7 @@ const TeamSection = () => {
       <div className="flex justify-center gap-6 flex-wrap">
         {teamMembers.map((member, index) => (
           <div key={index} className="text-center p-4 bg-white dark:bg-gray-800 rounded-sm shadow-lg transition duration-300 hover:scale-105 hover:shadow-2xl">
-            <img src={member.imgSrc} alt={member.alt} className="rounded-sm mb-4 w-48 h-64 object-cover mx-auto shadow-md transition-transform transform hover:scale-110 hover:rotate-1" />
+            <img src={member.imgSrc} alt={member.alt} loading="lazy" className="rounded-sm mb-4 w-48 h-64 object-cover mx-auto shadow-md transition-transform transform hover:scale-110 hover:rotate-1" />
             <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200">{member.name}</h3>
             <p className="text-gray-600 dark:text-gray-400">{member.role}</p>
           </div>
