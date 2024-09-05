@@ -1,5 +1,5 @@
 import heroImage from '../assets/images/pagaruyung3.jpg';
-
+import { Link } from 'react-router-dom';
 const HeroSection = () => {
   return (
     <div className="relative h-[80vh] sm:h-screen w-full bg-center bg-cover bg-fixed" style={{ backgroundImage: `url(${heroImage})` }}>
@@ -20,13 +20,13 @@ const HeroSection = () => {
             />
           </div>
 
-          <div className="bg-green-800 hover:bg-green-700 p-2 sm:px-4 text-white font-semibold rounded-full hover:shadow-lg transition duration-300 cursor-pointer sm:w-auto text-center transform hover:scale-105">
+          <Link to="/destinations" className="bg-green-800 hover:bg-green-700 p-2 sm:px-4 text-white font-semibold rounded-full hover:shadow-lg transition duration-300 cursor-pointer sm:w-auto text-center transform hover:scale-105">
             <span className="text-sm sm:text-base">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 sm:h-6 sm:w-6 text-gray-300 hover:text-white transition-colors duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
               </svg>
             </span>
-          </div>
+          </Link>
         </div>
       </div>
     </div>

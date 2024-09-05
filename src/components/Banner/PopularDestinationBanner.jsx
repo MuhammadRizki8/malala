@@ -3,7 +3,7 @@ import { FaMapMarkerAlt } from 'react-icons/fa';
 import { AiOutlineHeart, AiOutlineShareAlt } from 'react-icons/ai';
 import ImageBanner from '../../assets/images/imgbanner.png';
 import bgBannerImage from '../../assets/images/bg-banner.png';
-
+import { Link } from 'react-router-dom';
 const PopularDestinationBanner = ({
   backgroundImage = bgBannerImage,
   destinationImage = ImageBanner,
@@ -36,9 +36,9 @@ const PopularDestinationBanner = ({
           <p className="text-xs lg:text-sm font-light font-poppins mb-2 sm:mb-8">{description}</p>
 
           <div className="flex items-center space-x-1 md:space-x-4">
-            <button className="text-xs md:text-base bg-green-700 dark:bg-green-600 text-white font-poppins font-medium px-4 lg:px-6 py-2 rounded-full shadow-lg hover:bg-green-800 dark:hover:bg-green-700 transition">
+            <Link to="/destinations/detail" className="text-xs md:text-base bg-green-700 dark:bg-green-600 text-white font-poppins font-medium px-4 lg:px-6 py-2 rounded-full shadow-lg hover:bg-green-800 dark:hover:bg-green-700 transition">
               Lihat Selengkapnya
-            </button>
+            </Link>
             <button className="text-white hover:text-red-500 dark:hover:text-red-400 transition">
               <AiOutlineHeart size={24} />
             </button>

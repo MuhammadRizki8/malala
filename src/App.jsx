@@ -11,6 +11,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import LoadingSpinner from './components/LoadingSpinner';
 import { useState, useEffect } from 'react';
+import OnProgress from './pages/OnProgress';
 
 AOS.init({
   duration: 1000, // Durasi animasi
@@ -39,6 +40,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/destinations/detail" element={<DestinationDetail />} />
+        <Route path="/onprogress" element={<OnProgress />} />
       </Routes>
       <Footer />
     </Router>

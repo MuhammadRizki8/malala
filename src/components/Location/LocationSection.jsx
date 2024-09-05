@@ -1,4 +1,5 @@
 import { useState, useEffect, useMemo } from 'react';
+import { Link } from 'react-router-dom';
 import DestinationCard from '../Destination/DestinationCard';
 import data from '../../data/data.json';
 import LocationButton from './LocationButton';
@@ -60,7 +61,9 @@ const LocationSection = () => {
       <div className="max-w-screen-xl w-full mx-auto px-4">
         <div className="flex flex-col items-start sm:flex-row justify-between sm:items-center mb-4">
           <h3 className="dark:text-slate-400 text-xl sm:text-2xl font-medium font-poppins">Destinasi Terkait</h3>
-          <button className="text-xs sm:text-base text-green-600 font-poppins transition duration-300 transform hover:scale-105">Lihat Semua</button>
+          <Link to="/destinations" className="text-xs sm:text-base text-green-600 font-poppins transition duration-300 transform hover:scale-105">
+            Lihat Semua
+          </Link>
         </div>
 
         <div className="grid grid-cols md:grid-cols-2 lg:grid-cols-4 gap-6" data-aos="fade-up">

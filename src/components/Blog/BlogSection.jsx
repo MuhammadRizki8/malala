@@ -1,5 +1,5 @@
 import BlogCard from './BlogCard';
-
+import { Link } from 'react-router-dom';
 // Blog data
 const blogs = [
   {
@@ -24,7 +24,9 @@ const BlogSection = () => {
     <section className="mt-14 mb-4 max-w-screen-xl w-full mx-auto px-4 sm:px-6 lg:px-8">
       <div className="flex justify-between items-center mb-6">
         <h3 className="text-base sm:text-xl font-medium font-poppins text-gray-900 dark:text-slate-300">Temukan inspirasi wisata dan cerita menarik dari para penulis kami.</h3>
-        <button className="text-xs sm:text-base text-green-600 dark:text-green-400 font-poppins transition duration-300 transform hover:scale-105 hidden sm:block">Lihat Semua</button>
+        <Link to="/onprogress" className="text-xs sm:text-base text-green-600 dark:text-green-400 font-poppins transition duration-300 transform hover:scale-105 hidden sm:block">
+          Lihat Semua
+        </Link>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4" data-aos="fade-up">
         {blogs.map((blog, index) => (

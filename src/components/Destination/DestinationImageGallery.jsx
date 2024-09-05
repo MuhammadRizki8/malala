@@ -1,6 +1,6 @@
 import { FaStar, FaMapMarkerAlt, FaArrowLeft } from 'react-icons/fa';
 import PropTypes from 'prop-types';
-
+import { Link } from 'react-router-dom';
 const DestinationImageGallery = () => {
   const renderStars = () => {
     const stars = [];
@@ -33,15 +33,15 @@ const DestinationImageGallery = () => {
     },
   ];
 
-  const ThumbnailImage = ({ src, alt }) => <img className="h-full w-full rounded-md shadow-md object-cover" src={src} alt={alt} />;
+  const ThumbnailImage = ({ src, alt }) => <img className="h-full w-full rounded-sm shadow-md object-cover" src={src} alt={alt} />;
 
   return (
     <div className="relative border-b mt-6 py-6 bg-white dark:bg-gray-900 max-w-7xl mx-auto">
       {/* Tombol Kembali */}
-      <a href="/destinations" className="mb-2 flex items-center text-green-700 dark:text-green-400 hover:text-green-900 dark:hover:text-green-600">
+      <Link to="/destinations" className="mb-2 flex items-center text-green-700 dark:text-green-400 hover:text-green-900 dark:hover:text-green-600">
         <FaArrowLeft className="mr-1 w-3 md:w-4" />
         <span className="text-xs md:text-sm lg:text-base">Kembali</span>
-      </a>
+      </Link>
 
       {/* Informasi Tujuan */}
       <h1 className="text-xl md:text-2xl lg:text-4xl font-semibold md:font-bold text-green-700 dark:text-green-400 mb-4 font-volkhov">Nagari Saribu Rumah Gadang</h1>

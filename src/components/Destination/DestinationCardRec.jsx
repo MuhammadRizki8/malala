@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-
+import { Link } from 'react-router-dom';
 const DestinationCardRec = ({ title, location, imageUrl, buttonText = 'Lihat Selengkapnya' }) => {
   return (
     <div className="relative w-full rounded-sm overflow-hidden shadow-lg">
@@ -13,9 +13,9 @@ const DestinationCardRec = ({ title, location, imageUrl, buttonText = 'Lihat Sel
       </div>
 
       {/* Button */}
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2">
+      <Link to="/onprogress" className="absolute bottom-4 left-1/2 transform -translate-x-1/2">
         <button className="text-xs md:text-base bg-green-500 dark:bg-green-600 text-white px-2 sm:px-4 py-1 sm:py-2 rounded-full shadow-md hover:bg-green-600 dark:hover:bg-green-700 transition duration-300">{buttonText}</button>
-      </div>
+      </Link>
     </div>
   );
 };
