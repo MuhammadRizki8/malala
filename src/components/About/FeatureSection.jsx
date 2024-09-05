@@ -1,9 +1,9 @@
-import { FaListAlt, FaAward, FaUserTie, FaHandHoldingUsd } from 'react-icons/fa';
+import { FaListAlt, FaAward, FaUserTie, FaHandHoldingUsd, FaGlobe } from 'react-icons/fa';
 
 const FeaturesSection = () => {
   return (
     <section className="bg-green-800 dark:bg-gray-700 py-12 px-4 transition duration-300">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-6 text-center" data-aos="zoom-in">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-6 text-center" data-aos="zoom-in">
         {/* Feature 1 */}
         <div className="bg-green-600 dark:bg-gray-800 p-6 rounded-sm flex flex-col items-center justify-center hover:shadow-lg transition duration-300">
           <div className="text-white dark:text-green-400 mb-4">
@@ -34,6 +34,14 @@ const FeaturesSection = () => {
             <FaHandHoldingUsd className="text-5xl" />
           </div>
           <p className="text-white dark:text-gray-200 text-center text-sm md:text-base">Dijamin Menyenangkan dengan Harga Terbaik!</p>
+        </div>
+
+        {/* Feature 5 - Destinasi Eksklusif */}
+        <div className="bg-green-600 dark:bg-gray-800 p-6 rounded-sm flex flex-col items-center justify-center hover:shadow-lg transition duration-300">
+          <div className="text-white dark:text-green-400 mb-4">
+            <FaGlobe className="text-5xl" />
+          </div>
+          <p className="text-white dark:text-gray-200 text-center text-sm md:text-base">Destinasi Eksklusif dan Autentik Minangkabau</p>
         </div>
       </div>
     </section>

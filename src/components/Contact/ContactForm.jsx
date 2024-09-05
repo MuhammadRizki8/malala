@@ -1,7 +1,7 @@
 const ContactForm = () => {
   return (
     <div data-aos="fade-right">
-      <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 text-gray-800 dark:text-gray-200 font-volkhov">Get in touch</h2>
+      <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 text-gray-800 dark:text-gray-200 font-volkhov">Hubungi Kami</h2>
       <p className="text-xs sm:text-base mb-6 text-gray-600 dark:text-gray-400">
         Kami selalu senang mendengar dari Anda! Apakah Anda memiliki pertanyaan, saran, atau ingin berbagi pengalaman wisata Anda? Jangan ragu untuk menghubungi kami melalui salah satu cara berikut:
       </p>
