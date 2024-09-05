@@ -18,7 +18,7 @@ const ReviewList = () => {
       <ul>
         {reviews.map((review) => (
           <li key={review.id} className="flex flex-col sm:flex-row items-start border-b py-4 dark:border-gray-700">
-            <img className="w-10 h-10 md:w-12 md:h-12 rounded-full mr-4 mb-2 sm:mb-0" src={review.imageUrl} alt={`${review.author}'s profile`} />
+            <img className="w-10 h-10 md:w-12 md:h-12 rounded-full mr-4 mb-2 sm:mb-0" src={`https://robohash.org/${review.author}.png`} alt={`${review.author}'s profile`} />
             <div className="flex-1">
               <div className="flex flex-col sm:flex-row items-start sm:items-center">
                 <span className="text-sm md:text-lg font-bold text-green-600 dark:text-green-500">

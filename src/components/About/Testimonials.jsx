@@ -5,32 +5,26 @@ const testimonials = [
   {
     name: 'Udin',
     text: 'Platform ini memberikan pengalaman terbaik saat menjelajahi keindahan Minang dan Sumatra Barat!',
-    imgSrc: 'https://ih1.redbubble.net/image.2998421987.7898/flat,750x,075,f-pad,750x1000,f8f8f8.u1.jpg',
   },
   {
     name: 'Maling Jambu',
     text: 'Saya menikmati setiap momen menggunakan layanan ini. Semua berjalan lancar dan tanpa kendala.',
-    imgSrc: 'https://ih1.redbubble.net/image.2998421987.7898/flat,750x,075,f-pad,750x1000,f8f8f8.u1.jpg',
   },
   {
     name: 'Siti',
     text: 'Saya senang bisa mengeksplorasi budaya dan alam Sumatra Barat melalui platform ini!',
-    imgSrc: 'https://ih1.redbubble.net/image.2998421987.7898/flat,750x,075,f-pad,750x1000,f8f8f8.u1.jpg',
   },
   {
     name: 'Asep',
     text: 'Layanan ini memudahkan saya merencanakan liburan saya. Sangat direkomendasikan!',
-    imgSrc: 'https://ih1.redbubble.net/image.2998421987.7898/flat,750x,075,f-pad,750x1000,f8f8f8.u1.jpg',
   },
   {
     name: 'Budi',
     text: 'Proses pemesanan cepat dan sederhana. Pelayanan pelanggan sangat memuaskan!',
-    imgSrc: 'https://ih1.redbubble.net/image.2998421987.7898/flat,750x,075,f-pad,750x1000,f8f8f8.u1.jpg',
   },
   {
     name: 'Dewi',
     text: 'Saya pasti akan menggunakan platform ini lagi untuk petualangan berikutnya!',
-    imgSrc: 'https://ih1.redbubble.net/image.2998421987.7898/flat,750x,075,f-pad,750x1000,f8f8f8.u1.jpg',
   },
 ];
 
@@ -74,7 +68,11 @@ const TestimonialCarousel = () => {
           {[testimonials[current], testimonials[(current + 1) % total]].slice(0, isLargeScreen ? 2 : 1).map((testimonial, index) => (
             <div key={index} className="bg-white dark:bg-gray-800 p-6 sm:p-8 rounded-sm shadow-lg transform transition duration-300 hover:scale-105">
               <div className="mb-4 sm:mb-6">
-                <img className="w-20 sm:w-24 h-20 sm:h-24 rounded-full mx-auto shadow-xl transform hover:scale-110 transition duration-300" src={testimonial.imgSrc} alt={testimonial.name} />
+                <img
+                  className="w-20 sm:w-24 h-20 sm:h-24 rounded-full mx-auto shadow-xl transform hover:scale-110 transition duration-300"
+                  src={`https://robohash.org/${testimonial.name}.png`} // Menggunakan nama sebagai input RoboHash
+                  alt={testimonial.name}
+                />
               </div>
               <p className="text-gray-600 dark:text-gray-300 italic mb-4 sm:mb-6">
                 <FaQuoteLeft className="inline-block text-green-500" size={20} /> {testimonial.text} <FaQuoteRight className="inline-block text-green-500" size={20} />

@@ -1,32 +1,32 @@
 const teamMembers = [
   {
-    name: 'Agung Perdana',
-    role: 'Web Designer',
+    name: 'Muhammad Rizki',
+    role: 'Web Developer',
     imgSrc: 'https://ih1.redbubble.net/image.2998421987.7898/flat,750x,075,f-pad,750x1000,f8f8f8.u1.jpg',
-    alt: 'Agung Perdana - Web Designer',
+    alt: 'Muhammad Rizki - Web Developer',
   },
   {
     name: 'Viola Resti',
     role: 'Marketing Director',
-    imgSrc: 'https://ih1.redbubble.net/image.2998421987.7898/flat,750x,075,f-pad,750x1000,f8f8f8.u1.jpg',
+    imgSrc: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2',
     alt: 'Viola Resti - Marketing Director',
   },
   {
     name: 'Rahardiansyah',
     role: 'International Relations',
-    imgSrc: 'https://ih1.redbubble.net/image.2998421987.7898/flat,750x,075,f-pad,750x1000,f8f8f8.u1.jpg',
+    imgSrc: 'https://images.unsplash.com/photo-1599566150163-29194dcaad36',
     alt: 'Rahardiansyah - International Relations',
   },
   {
     name: 'Andika',
     role: 'Medical Check',
-    imgSrc: 'https://ih1.redbubble.net/image.2998421987.7898/flat,750x,075,f-pad,750x1000,f8f8f8.u1.jpg',
+    imgSrc: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde',
     alt: 'Andika - Medical Check',
   },
   {
     name: 'Theresa Russell',
     role: 'Doctor Assistant',
-    imgSrc: 'https://ih1.redbubble.net/image.2998421987.7898/flat,750x,075,f-pad,750x1000,f8f8f8.u1.jpg',
+    imgSrc: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb',
     alt: 'Theresa Russell - Doctor Assistant',
   },
 ];

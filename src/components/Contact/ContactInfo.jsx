@@ -5,7 +5,7 @@ const ContactInfo = () => {
     <div className="space-y-6 col-span-full w-full" data-aos="flip-right">
       <iframe
         title="Map"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.716861227449!2d110.3670614746055!3d-7.801194677297966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a579f20203db7%3A0x3faef5f06e7b6454!2sYogyakarta!5e0!3m2!1sen!2sid!4v1693411510232!5m2!1sen!2sid"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15958.763861452913!2d100.5919963!3d-0.4577941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2fd52d6c912f19e5%3A0x3425e9d27053fd72!2sBatusangkar%2C%20Baringin%2C%20Kec.%20Lima%20Kaum%2C%20Kabupaten%20Tanah%20Datar%2C%20Sumatera%20Barat!5e0!3m2!1sid!2sid!4v1725513045931!5m2!1sid!2sid"
         width="100%"
         height="250"
         className="border rounded-md dark:border-gray-700"
