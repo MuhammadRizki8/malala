@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { FaTree, FaUtensils, FaLandmark, FaUmbrellaBeach, FaBook, FaUniversity } from 'react-icons/fa';
+import { FaTree, FaUtensils, FaLandmark, FaUmbrellaBeach, FaBook, FaUniversity, FaHiking } from 'react-icons/fa';
 
 const categoryStyles = {
   Alam: { color: 'text-green-500 dark:text-green-300', icon: FaTree },
@@ -8,6 +8,7 @@ const categoryStyles = {
   Pantai: { color: 'text-blue-500 dark:text-blue-300', icon: FaUmbrellaBeach },
   Sejarah: { color: 'text-yellow-500 dark:text-yellow-300', icon: FaBook },
   Pendidikan: { color: 'text-indigo-500 dark:text-indigo-300', icon: FaUniversity },
+  Petualangan: { color: 'text-orange-500 dark:text-orange-300', icon: FaHiking }, // Badge Petualangan
 };
 
 const InfoPanel = ({ name, description, categories }) => {
@@ -25,7 +26,7 @@ const InfoPanel = ({ name, description, categories }) => {
           {categories.map((category, index) => {
             const { color, icon: Icon } = categoryStyles[category] || { color: 'text-gray-500 dark:text-gray-400', icon: null };
             return (
-              <span data-aos="zoom-out" data-aos-delay="500" key={index} className={`bg-white dark:bg-slate-700 ${color} px-3 py-1 rounded-sm shadow-lg text-xs sm:text-sm font-poppins flex items-center border dark:border-slate-600`}>
+              <span key={index} className={`bg-white dark:bg-slate-700 ${color} px-3 py-1 rounded-sm shadow-lg text-xs sm:text-sm font-poppins flex items-center border dark:border-slate-600`}>
                 {Icon && <Icon className="inline-block mr-1" />} {category}
               </span>
             );

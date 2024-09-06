@@ -47,6 +47,12 @@
       "image": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Padang_Panjang_Train_-_Sawahlunto.jpg",
       "description": "Padang Panjang memiliki pemandangan alam yang menakjubkan, seperti Air Terjun Lembah Anai dan kebun teh. Kota ini sering disebut sebagai 'Mesin Budaya Minangkabau' karena kaya akan seni dan tradisi.",
       "categories": ["Alam", "Sejarah", "Budaya"]
+    },
+    {
+      "name": "Painan",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Sunset_kuta_beach.jpg",
+      "description": "Painan terkenal dengan Puncak Mandeh yang memberikan pemandangan laut lepas dan gugusan pulau kecil yang sangat mempesona. Selain itu, Pantai Carocok Painan juga menjadi destinasi favorit untuk bersantai dan menikmati keindahan matahari terbenam.",
+      "categories": ["Alam", "Pantai", "Petualangan"]
     }
   ],
   "Destinations": [

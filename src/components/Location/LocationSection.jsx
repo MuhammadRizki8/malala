@@ -44,7 +44,7 @@ const LocationSection = () => {
         </div>
 
         {/* Buttons for larger screens */}
-        <div className="hidden sm:flex pt-1 flex-wrap space-x-4 justify-center" data-aos="fade-up" data-aos-delay="200">
+        <div className="hidden sm:flex pt-1 flex-wrap space-x-4 justify-center max-w-3xl" data-aos="fade-up" data-aos-delay="200">
           {data.locations.map((location, index) => (
             <LocationButton key={index} location={location} activeLocation={activeLocation} setActiveLocation={setActiveLocation} />
           ))}
